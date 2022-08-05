@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     public bool stop;
     public float time = 20;
     public GameObject tembutton;
+    public GameObject temb;
     public TextMeshProUGUI TimeText;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class Timer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (stop == false)
         {
@@ -47,5 +48,6 @@ public class Timer : MonoBehaviour
     public void TimeReset()
     {
         time = 20;
+        temb.SetActive(false);
     }
 }
