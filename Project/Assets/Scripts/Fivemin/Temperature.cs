@@ -44,5 +44,6 @@ public class Temperature : MonoBehaviour
             if (nowtem <= Mintem)
                 nowtem = Mintem;
         }
+
     }
 }
