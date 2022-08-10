@@ -31,13 +31,15 @@ public class SkillManagement : MonoBehaviour
     }
     #endregion
 
+    //public int skill1 = 0;
     public void GetSkill(int num)
     {
         switch (num)
         {
             case 0:
+                //skill1 + N;
                 break;
         }
-        PlayerDataSaveSystem.Instance.SaveSkills(this);
+        Data.Instance.SaveSkills(this);
     }
 }

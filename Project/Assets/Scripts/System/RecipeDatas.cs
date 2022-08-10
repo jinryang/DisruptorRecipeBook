@@ -5,12 +5,12 @@ using UnityEngine;
 public class RecipeDatas : MonoBehaviour
 {
     #region Singleton
-    private static RecipeDatas instence;
+    private static RecipeDatas instance;
     private void Awake()
     {
-        if (null == instence)
+        if (null == instance)
         {
-            instence = this;
+            instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
         else
@@ -19,6 +19,17 @@ public class RecipeDatas : MonoBehaviour
         }
         BackUpBone = Recipes;
         LoadRecipe();
+    }
+    public static RecipeDatas Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
     }
     #endregion
 
@@ -32,10 +43,16 @@ public class RecipeDatas : MonoBehaviour
 
     [SerializeField]
     public List<RecipeInfo> Recipes;
-
     public List<RecipeInfo> BackUpBone;
+
+    public void GetRecipe(int _idx)
+    {
+        Recipes[_idx].isHold = true;
+        Data.Instance.SaveRecipes(Recipes);
+    }
+
     public void LoadRecipe()
     {
-        Recipes = PlayerDataSaveSystem.Instance.LoadData().recipes;
+        Recipes = Data.Instance.LoadData().recipes;
     }
 }

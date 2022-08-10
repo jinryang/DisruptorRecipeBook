@@ -287,6 +287,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2089082816}
   - component: {fileID: 2089082815}
+  - component: {fileID: 2089082819}
+  - component: {fileID: 2089082818}
+  - component: {fileID: 2089082817}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -321,3 +324,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089082817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089082814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d97c6f6bd3b9046b65e964228680f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2089082818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089082814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e160b77d2c43524f9774b5c168d212d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Recipes: []
+  BackUpBone: []
+--- !u!114 &2089082819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089082814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b1009239c26b343bdc57d49440254d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

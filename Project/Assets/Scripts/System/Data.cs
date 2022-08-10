@@ -4,10 +4,10 @@ using System;
 using System.IO;
 using UnityEngine;
 
-public class PlayerDataSaveSystem : MonoBehaviour
+public class Data : MonoBehaviour
 {
     #region Singleton
-    private static PlayerDataSaveSystem instance;
+    private static Data instance;
     private void Awake()
     {
         if (null == instance)
@@ -20,7 +20,7 @@ public class PlayerDataSaveSystem : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public static PlayerDataSaveSystem Instance
+    public static Data Instance
     {
         get
         {
@@ -37,11 +37,11 @@ public class PlayerDataSaveSystem : MonoBehaviour
     public class JsonData
     {
         public string userName = "I'm gay";
-        public int storyPoint;
+        public int point;
         public List<RecipeDatas.RecipeInfo> recipes;
         public SkillManagement skills;
     }
-
+    #region Save&Load
     public void SaveData(List<RecipeDatas.RecipeInfo> _recipes)
     {
         Debug.Log(Application.persistentDataPath);
@@ -63,11 +63,11 @@ public class PlayerDataSaveSystem : MonoBehaviour
 
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
-    public void SaveStoryPoint(int _point)
+    public void SavePoint(int _point)
     {
         JsonData data = LoadData();
 
-        data.storyPoint = _point;
+        data.point = _point;
 
         string json = JsonUtility.ToJson(data);
 
@@ -109,4 +109,5 @@ public class PlayerDataSaveSystem : MonoBehaviour
             return null;
         }
     }
+    #endregion
 }
