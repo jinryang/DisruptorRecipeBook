@@ -6,6 +6,9 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    public Point po;
+    public Temperature tem;
+
     int a = 0;
     public bool reset;
     public bool stop;
@@ -13,6 +16,9 @@ public class Timer : MonoBehaviour
     public GameObject tembutton;
     public GameObject temb;
     public TextMeshProUGUI TimeText;
+
+    public int tempoint;
+    public int timepoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +40,13 @@ public class Timer : MonoBehaviour
                 tembutton.SetActive(false);
                 if (a == 0)
                 {
+                    po.AddPoint(tempoint);
                     Invoke("TimeReset", 3.0f);
                     a++;
+                }
+                if (a == 1)
+                {
+                    po.AddPoint(timepoint);
                 }
             }
         }
@@ -49,5 +60,15 @@ public class Timer : MonoBehaviour
     {
         time = 20;
         temb.SetActive(false);
+    }
+    public void AddTemPoint()
+    {
+        if (tem.nowtem >= 160)
+            tempoint = 100;
+    }
+    public void AddTimePoint()
+    {
+        if (time >= 10)
+            timepoint = 100;
     }
 }

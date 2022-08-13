@@ -11,6 +11,7 @@ public class Temperature : MonoBehaviour
     public float nowtem;
     public float DectemSpeed = 0.3f;
     private bool isClick;
+
     public void ButtonDown()
     {
         isClick = true;
