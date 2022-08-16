@@ -36,7 +36,7 @@ public class Data : MonoBehaviour
     [System.Serializable]
     public class JsonData
     {
-        public string userName = "I'm gay";
+        public string userName;
         public int point;
         public List<RecipeDatas.RecipeInfo> recipes;
         public SkillManagement skills;
