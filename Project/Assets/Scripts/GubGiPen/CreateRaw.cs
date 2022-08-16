@@ -32,6 +32,8 @@ public class CreateRaw : MonoBehaviour
     private bool OnTimer = false;
     private float timer = 0;
 
+    private int score = 0;
+
     void Start()
     {
         for (int i = 0; i < place.Length; i++)
@@ -66,7 +68,14 @@ public class CreateRaw : MonoBehaviour
 
     public void RemovePlace(int id)
     {
+        if (id < 0) return;
         place[id] = false;
         OnTimer = true;
+    }
+
+    public void GetScore(int _point)
+    {
+        score += _point;
+        Debug.Log(score);
     }
 }
