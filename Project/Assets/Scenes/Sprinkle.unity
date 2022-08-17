@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 263420208}
   - component: {fileID: 263420209}
+  - component: {fileID: 263420210}
   m_Layer: 0
   m_Name: SprinklePoint3
   m_TagString: Untagged
@@ -181,6 +182,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 1.8}
   m_EdgeRadius: 0
+--- !u!114 &263420210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263420207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
+  IsEnded: 0
+  IsClick: 0
+  sprinkleManager: {fileID: 0}
 --- !u!1 &364991195
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364991196}
   - component: {fileID: 364991197}
+  - component: {fileID: 364991198}
   m_Layer: 0
   m_Name: SprinklePoint1
   m_TagString: Untagged
@@ -239,6 +257,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 1.8}
   m_EdgeRadius: 0
+--- !u!114 &364991198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364991195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
+  IsEnded: 0
+  IsClick: 0
+  sprinkleManager: {fileID: 0}
 --- !u!1001 &842976590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,6 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187895375}
   - component: {fileID: 1187895376}
+  - component: {fileID: 1187895377}
   m_Layer: 0
   m_Name: SprinklePoint2
   m_TagString: Untagged
@@ -422,6 +457,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 1.8}
   m_EdgeRadius: 0
+--- !u!114 &1187895377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187895374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
+  IsEnded: 0
+  IsClick: 0
+  sprinkleManager: {fileID: 0}
 --- !u!1 &1344549409
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344549410}
   - component: {fileID: 1344549411}
+  - component: {fileID: 1344549412}
   m_Layer: 0
   m_Name: SprinklePoint4
   m_TagString: Untagged
@@ -480,6 +532,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 1.8}
   m_EdgeRadius: 0
+--- !u!114 &1344549412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344549409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
+  IsEnded: 0
+  IsClick: 0
+  sprinkleManager: {fileID: 0}
 --- !u!1001 &1606205778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,6 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080771751}
   - component: {fileID: 2080771750}
+  - component: {fileID: 2080771752}
   m_Layer: 0
   m_Name: Food
   m_TagString: Untagged
@@ -670,3 +739,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080771752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080771749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2898525ceee6a4b48bed7c19f1e0921a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprinklePos:
+  - {fileID: 364991198}
+  - {fileID: 1187895377}
+  - {fileID: 263420210}
+  - {fileID: 1344549412}
+  InteractPos: 0

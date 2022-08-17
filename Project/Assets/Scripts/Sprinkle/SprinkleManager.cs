@@ -4,26 +4,33 @@ using UnityEngine;
 
 public class SprinkleManager : MonoBehaviour
 {
-    [SerializeField] GameObject sprinklePos1;
-    [SerializeField] GameObject sprinklePos2;
-    [SerializeField] GameObject sprinklePos3;
-    [SerializeField] GameObject sprinklePos4;
-    public int interactPos;
-    // Start is called before the first frame update
+    [SerializeField] SprinkleTimeManager[] sprinklePos = new SprinkleTimeManager[4];
+    public int InteractPos = 0; // number of interacting SprinklePos
+    private int cnt = 0; // number of endedPos
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
+        cnt = 0;
+        for(int i = 0; i < 4; i++)
+        {
+            if(sprinklePos[i].IsEnded == true)
+            {
+                cnt++;
+            }
+            if(cnt == 4)
+            {
+                Debug.Log("End");
+                //»Ñ¸®±â ³¡
+            }
+        }
         
     }
 
-    IEnumerator Sprinkle()
-    {
+    
 
-        yield return null;
-    }
+    
 }
