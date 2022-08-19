@@ -19,6 +19,7 @@ public class CookTimer : MonoBehaviour
         if (timer >= 0) text.text = Mathf.Round(timer).ToString("00") + ":" + (Mathf.Round(timer * 100) % 100).ToString("00");
         else
         {
+            text.text = "00:00";
             //게임 끝내기
         }
     }

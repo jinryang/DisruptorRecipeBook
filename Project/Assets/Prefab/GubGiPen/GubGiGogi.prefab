@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 540824659340375891}
   - component: {fileID: 816671449930870267}
   m_Layer: 0
-  m_Name: Gogi
+  m_Name: GubGiGogi
   m_TagString: MoveObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
