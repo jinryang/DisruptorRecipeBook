@@ -8,7 +8,7 @@ public class Move : MonoBehaviour
     private Rigidbody2D rigid;
     public float delta = 10.0f;
     public float speed = 1.0f;
-    int stop = 0;
+    public int stop = 0;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -28,5 +28,6 @@ public class Move : MonoBehaviour
         {
             rigid.gravityScale = 0.5f;
         }
+
     }
 }
