@@ -1832,6 +1832,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6793076595364600498, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
   m_PrefabInstance: {fileID: 2053374510}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1942766550 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2601170631019801309, guid: 2b4afb8607b0fad4294d8880d0a57453, type: 3}
+  m_PrefabInstance: {fileID: 829672574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2021682779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +2004,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6793076595364600499, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1942766550}
     - target: {fileID: 6793076595364600499, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
