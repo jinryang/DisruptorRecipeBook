@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MoveObject
   - StayAble
+  - Cooks
   layers:
   - Default
   - TransparentFX
