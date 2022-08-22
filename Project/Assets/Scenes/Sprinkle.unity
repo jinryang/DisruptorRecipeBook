@@ -194,10 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 3
+  time: 2
   IsEnded: 0
   IsClick: 0
-  sprinkleManager: {fileID: 0}
+  sprinkleManager: {fileID: 2080771752}
 --- !u!1 &364991195
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,10 +269,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 3
+  time: 2
   IsEnded: 0
   IsClick: 0
-  sprinkleManager: {fileID: 0}
+  sprinkleManager: {fileID: 2080771752}
 --- !u!1001 &842976590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,10 +469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 3
+  time: 2
   IsEnded: 0
   IsClick: 0
-  sprinkleManager: {fileID: 0}
+  sprinkleManager: {fileID: 2080771752}
 --- !u!1 &1344549409
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,10 +544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1d33b5926eef4385e70d2ce5eb35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 3
+  time: 2
   IsEnded: 0
   IsClick: 0
-  sprinkleManager: {fileID: 0}
+  sprinkleManager: {fileID: 2080771752}
 --- !u!1001 &1606205778
 PrefabInstance:
   m_ObjectHideFlags: 0
