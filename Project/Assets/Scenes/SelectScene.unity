@@ -180,6 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b4afb8607b0fad4294d8880d0a57453, type: 3}
+--- !u!20 &1016381345 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2601170631019801309, guid: 2b4afb8607b0fad4294d8880d0a57453, type: 3}
+  m_PrefabInstance: {fileID: 229400500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1288052422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,6 +192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6793076595364600496, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6793076595364600498, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -271,6 +280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6793076595364600499, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1016381345}
     - target: {fileID: 6793076595364600502, guid: 1deeb8988ef0ca44fa17ac1635e7a0f7, type: 3}
       propertyPath: m_Name
       value: Canvas
