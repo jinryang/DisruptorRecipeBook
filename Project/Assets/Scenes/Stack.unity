@@ -922,6 +922,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger
       objectReference: {fileID: 0}
+    - target: {fileID: 6772031490715749288, guid: 1b285a504eed6644883e2ff279a7edd5, type: 3}
+      propertyPath: drop
+      value: 
+      objectReference: {fileID: 6772031490715749283, guid: 1b285a504eed6644883e2ff279a7edd5, type: 3}
+    - target: {fileID: 6772031490715749288, guid: 1b285a504eed6644883e2ff279a7edd5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6772031490715749295, guid: 1b285a504eed6644883e2ff279a7edd5, type: 3}
       propertyPath: m_RootOrder
       value: 5
