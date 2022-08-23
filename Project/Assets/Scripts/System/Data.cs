@@ -93,6 +93,7 @@ public class Data : MonoBehaviour
 
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
+
     public JsonData LoadData()
     {
         Debug.Log(Application.persistentDataPath);
