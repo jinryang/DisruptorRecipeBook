@@ -167,7 +167,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e160b77d2c43524f9774b5c168d212d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Recipes: []
+  Recipes:
+  - Name: "\uBCA0\uC2A4 \uAD6C\uC774"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uD669\uC18C\uAC1C\uAD6C\uB9AC \uB2E4\uB9AC \uD280"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uBBF8\uAD6D \uAC00\uC7AC \uC57C\uCC44\uBCF6"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uBBF8\uAD6D \uAC00\uC7AC \uB9C8\uB77C\uB871"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uB274\uD2B8\uB9AC\uC544 \uBC84\uAC70"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uB274\uD2B8\uB9AC\uC544 \uACE0\uAE30\uC644\uC790"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uBCA0\uC2A4 \uB9E4\uC6B4\uD0D5"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uD2F8\uB77C\uD53C\uC544 \uC870\uB9BC"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uC0BD\uACB9\uC0B4 \uAC00\uC2DC \uC0C1\uCD94\uC308"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: "\uBBF8\uAD6D \uAC00\uC7AC \uB77C\uBA74"
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: 
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: 
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: 
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: 
+    Image: {fileID: 0}
+    isHold: 0
+  - Name: 
+    Image: {fileID: 0}
+    isHold: 0
   BackUpBone: []
 --- !u!114 &699578146
 MonoBehaviour:
