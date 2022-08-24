@@ -24,4 +24,8 @@ public class MainButton : MonoBehaviour
     {
         Application.Quit();
     }
+    public void BackButton()
+    {
+        setting.SetActive(false);
+    }
 }
