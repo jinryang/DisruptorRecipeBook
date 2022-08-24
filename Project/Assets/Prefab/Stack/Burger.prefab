@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6772031490715749294}
   - component: {fileID: 6772031490715749293}
   - component: {fileID: 6772031490715749292}
-  - component: {fileID: 6772031490715749288}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Untagged
@@ -78,8 +77,8 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -133,20 +132,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &6772031490715749288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6772031490715749283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74e9257d81e8bcf4ba0fe0dd2d70d98a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delta: 7
-  speed: 1
-  stop: 0
-  drop: {fileID: 0}
+  m_Constraints: 5
