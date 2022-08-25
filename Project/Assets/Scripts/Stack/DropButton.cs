@@ -5,16 +5,21 @@ using UnityEngine;
 public class DropButton : MonoBehaviour
 {
     public GameObject drop;
-    public GameObject droppo;
+    public Move move;
+    public int StopDrop = 0;
+    public int maxDrop = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Move move = GetComponent<Move>();
+        StopDrop = 0;
     }
 
     // Update is called once per frame
     public void Drop()
     {
-        Instantiate(drop,(droppo.gameObject.transform));
+        StopDrop += 1;
+        if(StopDrop <= maxDrop)
+            move.stop = 1;
     }
 }

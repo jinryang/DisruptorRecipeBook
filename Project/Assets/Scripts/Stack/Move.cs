@@ -9,7 +9,9 @@ public class Move : MonoBehaviour
     public float delta = 10.0f;
     public float speed = 1.0f;
     public int stop = 0;
-    
+    public GameObject drop;
+    public Transform droptransform;
+
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -22,6 +24,11 @@ public class Move : MonoBehaviour
         rigid.gravityScale = 0;
         v.x += delta * Mathf.Sin(Time.time * speed);
         transform.position = v;
+        if (stop == 1)
+        {
+            Instantiate(drop,droptransform.position,droptransform.rotation);
+            stop = 0;
+        }
 
     }
 }

@@ -14,7 +14,7 @@ public class MainButton : MonoBehaviour
     }
     public void StartButton()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("SelectScene");
     }
     public void SettingButton()
     {
