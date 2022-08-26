@@ -36,10 +36,10 @@ public class Data : MonoBehaviour
     [System.Serializable]
     public class JsonData
     {
-        public string userName;
-        public int point;
+        public string userName = "HanCo";
+        public int point = 0;
         public List<RecipeDatas.RecipeInfo> recipes;
-        public SkillManagement skills;
+        public List<SkillManagement.SkillInfo> skills;
     }
     #region Save&Load
     public void SaveData(List<RecipeDatas.RecipeInfo> _recipes)
@@ -83,7 +83,7 @@ public class Data : MonoBehaviour
 
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
-    public void SaveSkills(SkillManagement _skill)
+    public void SaveSkills(List<SkillManagement.SkillInfo> _skill)
     {
         JsonData data = LoadData();
 
@@ -109,6 +109,12 @@ public class Data : MonoBehaviour
             Debug.Log("Null Refrenece on LoadData()");
             return null;
         }
+    }
+    public void InitData()
+    {
+        SaveData(RecipeDatas.Instance.BackUpBone);
+        RecipeDatas.Instance.LoadRecipe();
+        SkillManagement.Instance.LoadSkill();
     }
     #endregion
 }
