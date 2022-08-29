@@ -24,7 +24,7 @@ public class RecipeClick : MonoBehaviour
     public void CookingClick()
     {
         GameObject rcip = Resources.Load<GameObject>("Recipes");
-        rcip.GetComponent<SetRecipe>().recipeNum = number;
+        rcip.GetComponent<SetRecipe>().recipeNum = number - 1;
         Instantiate(rcip, GameObject.Find("Canvas").transform);
     }
 }
