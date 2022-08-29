@@ -1527,7 +1527,7 @@ GameObject:
   - component: {fileID: 1557936374}
   - component: {fileID: 1557936377}
   m_Layer: 5
-  m_Name: StoryScene
+  m_Name: StorySelectScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

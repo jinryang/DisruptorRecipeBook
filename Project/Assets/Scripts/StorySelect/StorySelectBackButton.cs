@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StoryButton : MonoBehaviour
+public class StorySelectBackButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,13 +11,8 @@ public class StoryButton : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    public void NextButton()
+    public void BackStoryScene()
     {
-
-    }
-    public void SkipButton()
-    {
-        SceneManager.LoadScene("StorySelectScene");
+        SceneManager.LoadScene("SelectScene");
     }
 }
