@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public Point po;
     public Temperature tem;
 
-    int a = 0;
+    bool a = false;
     public bool reset;
     public bool stop;
     public float time = 20;
@@ -23,6 +23,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        a = false;
         reset = false;
         stop = false;
         time = 20;
@@ -39,19 +40,20 @@ public class Timer : MonoBehaviour
             {
                 time = 0;
                 tembutton.SetActive(false);
-                if (a == 0)
+                
+                if(!a)
                 {
                     AddTemPoint();
                     po.AddPoint(tempoint);
                     temb.SetActive(true);
                     Invoke("TimeReset", 3.0f);
-                    a++;
-                }
-                if (a == 1)
-                {
-                    po.AddPoint(timepoint);
                 }
             }
+        }
+        if (a)
+        {
+            AddTimePoint();
+            po.AddPoint(timepoint + tempoint);
         }
         TimeText.text = string.Format("{0:N2}", time);
         if (tem.nowtem <= 165 && tem.nowtem >= 155)
@@ -59,7 +61,7 @@ public class Timer : MonoBehaviour
         else if (tem.nowtem <= 170 && tem.nowtem >= 140)
             temg.color = Color.yellow;
         else if (tem.nowtem <= 180 && tem.nowtem >= 120)
-            temg.color = Color.red + Color.yellow;
+            temg.color = new Color(255, 161, 0, 255);
         else if (tem.nowtem <= 190 && tem.nowtem > 100)
             temg.color = Color.red;
         else if (tem.nowtem <= 200 && tem.nowtem > 100)
@@ -71,11 +73,13 @@ public class Timer : MonoBehaviour
     {
         stop = true;
         temb.SetActive(true);
+        a = true;
     }
     public void TimeReset()
     {
-        time = 20;
+        time = 20.02f;
         temb.SetActive(false);
+        
     }
     public void AddTemPoint()
     {
@@ -83,18 +87,24 @@ public class Timer : MonoBehaviour
             tempoint = 100;
         else if (tem.nowtem <= 170 && tem.nowtem >= 140)
             tempoint = 70;
-        else if(tem.nowtem <= 180 && tem.nowtem >= 120)
+        else if (tem.nowtem <= 180 && tem.nowtem >= 120)
             tempoint = 50;
-        else if(tem.nowtem <= 190 && tem.nowtem > 100)
+        else if (tem.nowtem <= 190 && tem.nowtem > 100)
             tempoint = 30;
-        else if(tem.nowtem <= 200)
+        else if (tem.nowtem <= 200)
             tempoint = 10;
         else if (tem.nowtem <= 100)
             tempoint = 10;
     }
     public void AddTimePoint()
     {
-        if (time >= 10)
+        if (time >= 9.5 && time <= 10.5 && stop)
             timepoint = 100;
+        else if (time >= 8 && time <= 12 && stop)
+            timepoint = 60;
+        else if (time >= 6 && time <= 15 && stop)
+            timepoint = 30;
+        else if (time >= 3 && stop)
+            timepoint = 10;
     }
 }

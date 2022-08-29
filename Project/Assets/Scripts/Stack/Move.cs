@@ -9,6 +9,9 @@ public class Move : MonoBehaviour
     public float delta = 10.0f;
     public float speed = 1.0f;
     public int stop = 0;
+    public GameObject drop;
+    public Transform droptransform;
+
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -18,15 +21,13 @@ public class Move : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 v = pos;
-        if(stop == 0)
-        {
-            rigid.gravityScale = 0;
-            v.x += delta * Mathf.Sin(Time.time * speed);
-            transform.position = v;
-        }
+        rigid.gravityScale = 0;
+        v.x += delta * Mathf.Sin(Time.time * speed);
+        transform.position = v;
         if (stop == 1)
         {
-            rigid.gravityScale = 0.5f;
+            Instantiate(drop,droptransform.position,droptransform.rotation);
+            stop = 0;
         }
 
     }

@@ -16,7 +16,7 @@ public class Point : MonoBehaviour
 
     public void AddPoint(int add)
     {
-        point += add;
+        point = add;
     }
     void FixedUpdate()
     {

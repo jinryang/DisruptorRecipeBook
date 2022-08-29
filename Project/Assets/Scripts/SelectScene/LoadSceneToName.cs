@@ -9,4 +9,9 @@ public class LoadSceneToName : MonoBehaviour
     {
         SceneManager.LoadScene(this.gameObject.name);
     }
+
+    public void DestroyPopUp()
+    {
+        Destroy(this.transform.parent.gameObject);
+    }
 }

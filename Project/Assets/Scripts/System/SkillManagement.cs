@@ -17,6 +17,8 @@ public class SkillManagement : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        BackUpBone = Skills;
+        LoadSkill();
     }
     public static SkillManagement Instance
     {
@@ -31,15 +33,27 @@ public class SkillManagement : MonoBehaviour
     }
     #endregion
 
-    //public int skill1 = 0;
-    public void GetSkill(int num)
+    public class SkillInfo
     {
-        switch (num)
-        {
-            case 0:
-                //skill1 + N;
-                break;
-        }
-        Data.Instance.SaveSkills(this);
+        public string Name;
+        public string Information;
+        public Sprite Image;
+        public bool isHold = false;
+        public int index;
+    }
+
+    [SerializeField]
+    public List<SkillInfo> Skills;
+    public List<SkillInfo> BackUpBone;
+
+    public void GetSkill(int _idx)
+    {
+        Skills[_idx].isHold = true;
+        Data.Instance.SaveSkills(Skills);
+    }
+    
+    public void LoadSkill()
+    {
+        Skills = Data.Instance.LoadData().skills;
     }
 }

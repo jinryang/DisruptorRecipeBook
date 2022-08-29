@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDataManagement : MonoBehaviour
+public class WilliamsonSuackBBalEDDakDDaguri : MonoBehaviour
 {
     #region Singleton
-    private static PlayerDataManagement instance;
+    private static WilliamsonSuackBBalEDDakDDaguri instance;
     private void Awake()
     {
         if (null == instance)
@@ -17,9 +17,8 @@ public class PlayerDataManagement : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        LoadPlayerData();
     }
-    public static PlayerDataManagement Instance
+    public static WilliamsonSuackBBalEDDakDDaguri Instance
     {
         get
         {
@@ -31,22 +30,19 @@ public class PlayerDataManagement : MonoBehaviour
         }
     }
     #endregion
-
-    private static int point = 0;
-    public static int Point
+    void Update()
     {
-        get { return point; }
-    }
-
-
-    public void LoadPlayerData()
-    {
-        point = Data.Instance.LoadData().point;
-    }
-
-    public void PlusPoint(int _point)
-    {
-        point += _point;
-        Data.Instance.SavePoint(0);
+        if (Input.GetKey(KeyCode.A))
+        {
+            RecipeDatas.Instance.GetRecipe(0);
+        }
+        else if (Input.GetKey(KeyCode.C))
+        {
+            RecipeDatas.Instance.GetRecipe(3);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            Data.Instance.InitData();
+        }
     }
 }

@@ -10,12 +10,14 @@ public class CutTimer : MonoBehaviour
     public TextMeshProUGUI TimeText;
     public GameObject cover;
     public bool cut;
+    public bool cuttimepoint;
     // Start is called before the first frame update
     void Start()
     {
         time = 10;
         cover.SetActive(false);
         cut = true;
+        cuttimepoint = false;
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class CutTimer : MonoBehaviour
             time -= Time.deltaTime;
         else
         {
+            cuttimepoint = true;
             time = 0;
             cover.SetActive(true);
             cut = false;

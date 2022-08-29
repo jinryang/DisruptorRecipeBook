@@ -14,7 +14,7 @@ public class MainButton : MonoBehaviour
     }
     public void StartButton()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("SelectScene");
     }
     public void SettingButton()
     {
@@ -23,5 +23,9 @@ public class MainButton : MonoBehaviour
     public void EndButton()
     {
         Application.Quit();
+    }
+    public void BackButton()
+    {
+        setting.SetActive(false);
     }
 }

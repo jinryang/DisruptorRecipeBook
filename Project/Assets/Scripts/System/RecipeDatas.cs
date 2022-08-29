@@ -39,6 +39,8 @@ public class RecipeDatas : MonoBehaviour
         public string Name;
         public Sprite Image;
         public bool isHold = false;
+        public int[] moveScene;
+        public int[] type;
     }
 
     [SerializeField]
