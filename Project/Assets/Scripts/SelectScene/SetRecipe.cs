@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SetRecipe : MonoBehaviour
 {
@@ -8,12 +9,9 @@ public class SetRecipe : MonoBehaviour
 
     void Start()
     {
-        //이미지 바꾸기
-        //레시피 띄우기
-    }
-
-    void Update()
-    {
-
+        this.transform.GetChild(2).GetComponent<Image>().sprite
+            = RecipeDatas.Instance.Recipes[recipeNum].Food;
+        this.transform.GetChild(3).GetComponent<Image>().sprite
+            = RecipeDatas.Instance.Recipes[recipeNum].Cooks;
     }
 }
