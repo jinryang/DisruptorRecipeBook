@@ -35,18 +35,20 @@ public class SoundSingleton : MonoBehaviour
         
     }
 
-    public void PlaySound(bool IsBGM, int numof)
+    public void SetSound(bool IsBGM, int numof)
     {
-        if(IsBGM == true)
+        if (IsBGM == true)
         {
             audio.clip = BGM[numof - 1];
-            audio.Play();
         }
         else
         {
             audio.clip = EF[numof - 1];
-            audio.Play();
         }
+    }
+    public void PlaySound(bool IsBGM, int numof)
+    {
+        audio.Play();
     }
 
     public void stop()
