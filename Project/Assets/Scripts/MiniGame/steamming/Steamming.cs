@@ -17,8 +17,9 @@ public class Steamming : MonoBehaviour
     void Update()
     {
         StartCoroutine(IsEnded());
-        if (numOfInDishes == sourceManagers.Length)
+        if (score == 0   && numOfInDishes == sourceManagers.Length)
         {
+            Debug.Log("ScoreCalcul");
             StartCoroutine(ScoreCalcul());
         }
     }
@@ -28,7 +29,7 @@ public class Steamming : MonoBehaviour
         numOfInDishes = 0;
         for (int i = 0; i < sourceManagers.Length; ++i)
         {
-            if (sourceManagers[i].IsOnRight)
+            if (sourceManagers[i].GetIsOnRight())
             {
                 ++numOfInDishes;
             }
@@ -43,23 +44,27 @@ public class Steamming : MonoBehaviour
         {
             if(sourceManagers[i].stepOfCooked == 1)
             {
-                score += sectionOfScore[i];
+                score += sectionOfScore[0];
             }
             else if(sourceManagers[i].stepOfCooked == 2)
             {
-                score += sectionOfScore[i];
+                score += sectionOfScore[1];
             }
             else if (sourceManagers[i].stepOfCooked == 3)
             {
-                score += sectionOfScore[i];
+                score += sectionOfScore[2];
             }
             else if (sourceManagers[i].stepOfCooked == 4)
             {
-                score += sectionOfScore[i];
+                score += sectionOfScore[3];
             }
             else if (sourceManagers[i].stepOfCooked == 5)
             {
-                score += sectionOfScore[i];
+                score += sectionOfScore[4];
+            }
+            else if (sourceManagers[i].stepOfCooked > 5)
+            {
+                score += sectionOfScore[5];
             }
         }
 

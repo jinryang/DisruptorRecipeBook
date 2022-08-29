@@ -7,6 +7,8 @@ TagManager:
   - MoveObject
   - StayAble
   - Cooks
+  - RightDish
+  - Pot
   layers:
   - Default
   - TransparentFX
