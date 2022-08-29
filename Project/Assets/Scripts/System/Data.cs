@@ -36,64 +36,28 @@ public class Data : MonoBehaviour
     [System.Serializable]
     public class JsonData
     {
-        public string userName = "HanCo";
         public int point = 0;
         public List<RecipeDatas.RecipeInfo> recipes;
         public List<SkillManagement.SkillInfo> skills;
     }
     #region Save&Load
-    public void SaveData(List<RecipeDatas.RecipeInfo> _recipes)
+    public void SaveData(List<RecipeDatas.RecipeInfo> _recipes = null, List<SkillManagement.SkillInfo> _skill = null, int _point = -1)
     {
         Debug.Log(Application.persistentDataPath);
         JsonData data = new JsonData();
 
-        data.recipes = _recipes;
+        if (null == _recipes) data.recipes = LoadData().recipes;
+        else data.recipes = _recipes;
+
+        if (null == _skill) data.skills = LoadData().skills;
+        else data.skills = _skill;
+
+        if (-1 == _point) data.point = LoadData().point;
+        else data.point = _point;
 
         string json = JsonUtility.ToJson(data);
-
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
-    public void SaveName(string _name)
-    {
-        JsonData data = LoadData();
-
-        data.userName = _name;
-
-        string json = JsonUtility.ToJson(data);
-
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
-    }
-    public void SavePoint(int _point)
-    {
-        JsonData data = LoadData();
-
-        data.point = _point;
-
-        string json = JsonUtility.ToJson(data);
-
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
-    }
-    public void SaveRecipes(List<RecipeDatas.RecipeInfo> _recipes)
-    {
-        JsonData data = LoadData();
-
-        data.recipes = _recipes;
-
-        string json = JsonUtility.ToJson(data);
-
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
-    }
-    public void SaveSkills(List<SkillManagement.SkillInfo> _skill)
-    {
-        JsonData data = LoadData();
-
-        data.skills = _skill;
-
-        string json = JsonUtility.ToJson(data);
-
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
-    }
-
     public JsonData LoadData()
     {
         Debug.Log(Application.persistentDataPath);
