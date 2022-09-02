@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FriManager : MonoBehaviour
 {
-    public int numberOfFlip;
+    public int FlipNum;
     private Vector3 BeginPos;
     private Vector3 EndPos;
     private int Friway;
@@ -23,22 +23,32 @@ public class FriManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
+            Debug.Log("click");
             BeginPos = Input.mousePosition;
         }
-        if(Input.GetKeyUp(0))
+        if(Input.GetMouseButtonUp(0))
         {
+            Debug.Log("up");
             EndPos = Input.mousePosition;
+            StartCoroutine(judgeDragway(Friway));
         }
         if(xIsPerfect == true && yIsPerfect == true)
         {
             //addscore
-            if (numberOfFlip == 0)
+            if (FlipNum == 0)
             {
                 //EndOfFlip
+                Debug.Log("FlipIsEnded");
             }
-            else numberOfFlip--;
+            else
+            { 
+                FlipNum--;
+                xIsPerfect = false;
+                yIsPerfect = false;
+                StartCoroutine(ChooseFriway());
+            }
         }
     }
 
@@ -47,44 +57,44 @@ public class FriManager : MonoBehaviour
     {
         if(Friway == 1)//왼쪽 위 x-, y+
         {
-            if(BeginPos.x - EndPos.x <= responsiveness)
+            if(EndPos.x - BeginPos.x <= -responsiveness)
             {
                 xIsPerfect = true;
             }
-            if(EndPos.y - BeginPos.y <= responsiveness / 1.3f)//윗쪽 판정은 좋게
+            if(EndPos.y - BeginPos.y >= responsiveness / 1.3f)//윗쪽 판정은 좋게
             {
                 yIsPerfect = true;
             }
         }
         else if(Friway == 2)//오른쪽 위 x+, y+
         {
-            if(EndPos.x - BeginPos.x <= responsiveness)
+            if(EndPos.x - BeginPos.x >= responsiveness)
             {
                 xIsPerfect = true;
             }
-            if(EndPos.y - BeginPos.y <= responsiveness / 1.3f)
+            if(EndPos.y - BeginPos.y >= responsiveness / 1.3f)
             {
                 yIsPerfect = true;
             }
         }
         else if(Friway == 3)//왼쪽 아래 x-, y-
         {
-            if (BeginPos.x - EndPos.x <= responsiveness)
+            if (EndPos.x - BeginPos.x <= -responsiveness)
             {
                 xIsPerfect = true;
             }
-            if (BeginPos.y - EndPos.y <= responsiveness / 1.3f)
+            if (EndPos.y - BeginPos.y <= responsiveness / 1.3f)
             {
                 yIsPerfect = true;
             }
         }
         else//오른쪽 아래 x+, y-
         {
-            if (EndPos.x - BeginPos.x <= responsiveness)
+            if (EndPos.x - BeginPos.x >= responsiveness)
             {
                 xIsPerfect = true;
             }
-            if (BeginPos.y - EndPos.y <= responsiveness / 1.3f)
+            if (EndPos.y - BeginPos.y <= responsiveness / 1.3f)
             {
                 yIsPerfect = true;
             }
@@ -97,6 +107,7 @@ public class FriManager : MonoBehaviour
     IEnumerator ChooseFriway()
     {
         Friway = Random.Range(0, 4) + 1;
+        Debug.Log(Friway);
         yield return null;
     }
 }
