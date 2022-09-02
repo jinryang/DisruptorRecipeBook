@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 5362802}
   - component: {fileID: 5362805}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -270,7 +270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 4
 --- !u!1 &25450277
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +708,7 @@ GameObject:
   - component: {fileID: 104158905}
   - component: {fileID: 104158908}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,7 +841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &126659313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1145,7 @@ GameObject:
   - component: {fileID: 312673342}
   - component: {fileID: 312673345}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1280,7 +1278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &320017358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,7 +1562,7 @@ GameObject:
   - component: {fileID: 361367842}
   - component: {fileID: 361367845}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1698,7 +1695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &387359159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,7 +1918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &467086421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,7 +2268,7 @@ GameObject:
   - component: {fileID: 593710545}
   - component: {fileID: 593710548}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2406,7 +2401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &696873422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +3055,7 @@ GameObject:
   - component: {fileID: 865698723}
   - component: {fileID: 865698726}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3194,7 +3188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &886024822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,7 +3707,7 @@ GameObject:
   - component: {fileID: 1084597243}
   - component: {fileID: 1084597246}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3847,7 +3840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &1095202463
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,7 +5265,7 @@ GameObject:
   - component: {fileID: 1434129198}
   - component: {fileID: 1434129201}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5406,7 +5398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &1484967961
 GameObject:
   m_ObjectHideFlags: 0
@@ -6381,7 +6372,7 @@ GameObject:
   - component: {fileID: 1677198737}
   - component: {fileID: 1677198740}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6514,7 +6505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 4
 --- !u!1 &1677617230
 GameObject:
   m_ObjectHideFlags: 0
@@ -6529,7 +6519,7 @@ GameObject:
   - component: {fileID: 1677617232}
   - component: {fileID: 1677617235}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6662,7 +6652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &1695954807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6677,7 +6666,7 @@ GameObject:
   - component: {fileID: 1695954809}
   - component: {fileID: 1695954812}
   m_Layer: 5
-  m_Name: Button
+  m_Name: StoryScene2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6810,7 +6799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c47239c47d29047a29656c038ba133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StorySceneNumber: 0
 --- !u!1 &1727638734
 GameObject:
   m_ObjectHideFlags: 0
