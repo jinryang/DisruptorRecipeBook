@@ -14,4 +14,10 @@ public class SetRecipe : MonoBehaviour
         this.transform.GetChild(3).GetComponent<Image>().sprite
             = RecipeDatas.Instance.Recipes[recipeNum].Cooks;
     }
+
+    public void GameStart()
+    {
+        MinigameManagement.Instance.SelectRecipe(recipeNum);
+        MinigameManagement.Instance.GoTutorial();
+    }
 }
