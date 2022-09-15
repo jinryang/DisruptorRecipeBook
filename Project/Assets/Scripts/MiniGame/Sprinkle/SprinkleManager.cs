@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SprinkleManager : MonoBehaviour
 {
-    [SerializeField] SprinkleTimeManager[] sprinklePos = new SprinkleTimeManager[4];
+    [SerializeField] SprinkleTimeManager[] sprinklePos;
     public int InteractPos = 0; // number of interacting SprinklePos
     private int cnt = 0; // number of endedPos
     public float score;
@@ -41,7 +41,6 @@ public class SprinkleManager : MonoBehaviour
         
     }
 
-    
 
     
 }
