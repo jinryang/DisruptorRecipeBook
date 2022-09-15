@@ -6,22 +6,33 @@ public class SoundSingleton : MonoBehaviour
 {
     [SerializeField] AudioClip[] BGM;
     [SerializeField] AudioClip[] EF;
-    AudioSource audio;
+    [SerializeField] AudioSource audio;
     public float fadeRange;
 
     private WaitForSeconds wait = new WaitForSeconds(0.01f);    
 
-    public SoundSingleton soundSingleton = null;
+    private static SoundSingleton instance = null;
     private void Awake()
     {
-        if(soundSingleton == null)
+        if(instance == null)
         {
-            soundSingleton = this;
+            instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else if(soundSingleton != this)
+        else if(instance != this)
         {
             Destroy(this.gameObject);
+        }
+    }
+    public static SoundSingleton Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                instance = null;
+            }
+            return instance;
         }
     }
 
@@ -39,19 +50,19 @@ public class SoundSingleton : MonoBehaviour
     {
         if (IsBGM == true)
         {
-            audio.clip = BGM[numof - 1];
+            audio.clip = BGM[numof];
         }
         else
         {
-            audio.clip = EF[numof - 1];
+            audio.clip = EF[numof];
         }
     }
-    public void PlaySound(bool IsBGM, int numof)
+    public void PlaySound()
     {
         audio.Play();
     }
 
-    public void stop()
+    public void Stop()
     {
         audio.Stop();
     }
