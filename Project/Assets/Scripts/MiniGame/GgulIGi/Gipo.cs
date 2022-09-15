@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Gipo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] GameObject mouseCollider;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
