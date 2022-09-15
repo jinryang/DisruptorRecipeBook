@@ -37,7 +37,12 @@ public class MinigameManagement : MonoBehaviour
     public int[] points;
     public int idx = 0;
 
-    public void SelectRecipe(int number)//게임 시작 버튼이 눌리면 레시피의 번호가 나온다.
+    public void PlusPoint(int value)
+    {
+        points[idx - 1] += value;
+    }
+
+    public void SelectRecipe(int number)
     {
         moveScenes = RecipeDatas.Instance.Recipes[number].moveScene;
         points = new int[moveScenes.Length];
@@ -46,6 +51,10 @@ public class MinigameManagement : MonoBehaviour
 
     public void GoTutorial()
     {
+        if (idx >= moveScenes.Length)
+        {
+            SceneManager.LoadScene("ScoreCalculation");
+        }
         switch (moveScenes[idx])
         {
             case 1:
