@@ -9,7 +9,7 @@ public class SoundSingleton : MonoBehaviour
     [SerializeField] AudioSource audio;
     public float fadeRange;
 
-    private WaitForSeconds wait = new WaitForSeconds(0.01f);    
+    private WaitForSeconds wait = new WaitForSeconds(0.01f);
 
     private static SoundSingleton instance = null;
     private void Awake()
@@ -75,7 +75,7 @@ public class SoundSingleton : MonoBehaviour
 
     public void FadeOutBGM()
     {
-        StopAllCoroutines(); 
+        StopAllCoroutines();
         StartCoroutine(FadeOut());
     }
     IEnumerator FadeIn()

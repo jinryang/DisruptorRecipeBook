@@ -9,6 +9,7 @@ TagManager:
   - Cooks
   - RightDish
   - Pot
+  - Mouse
   layers:
   - Default
   - TransparentFX
