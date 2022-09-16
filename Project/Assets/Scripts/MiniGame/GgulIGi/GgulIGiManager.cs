@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class GgulIGiManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] GameObject Bubble;
+    public int score = 0;
+    public float BubbleSummonTime = 0.3f;
+    private float tempTime;
+
+
     void Start()
     {
-        
+        tempTime = BubbleSummonTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        BubbleSummonTime -= Time.deltaTime;
+        if (BubbleSummonTime <= 0)
+        {
+            BubbleSummonTime = tempTime;
+
+            float x = Random.Range(-3.75f, 3.75f);
+            float y = Random.Range(-3.75f, 3.75f);
+            WaitForSeconds wait = new WaitForSeconds(0.3f);
+            Instantiate(Bubble, new Vector3(x, y, 1), Quaternion.identity);
+        }
+    }
+    public void addScore()
+    {
+        score += 100;
     }
 }
