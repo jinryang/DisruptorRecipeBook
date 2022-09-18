@@ -106,14 +106,14 @@ public class MinigameManagement : MonoBehaviour
             case 15:
             case 16:
                 {
-                    Debug.Log("아직 존재하지 않는다.");
+                    Debug.Log("GGulIGiHow");
                     break;
                 }
         }
     }
     public void GoGame()
     {
-        switch (moveScenes[idx++])//로드할 씬 집어넣기
+        switch (moveScenes[idx++])
         {
             case 1: { SceneManager.LoadScene("GubGiPenB"); break; }
             case 2: { SceneManager.LoadScene("GubGiPenN"); break; }
@@ -129,8 +129,8 @@ public class MinigameManagement : MonoBehaviour
             case 12: { SceneManager.LoadScene("OilFriF"); break; }
             case 13: { SceneManager.LoadScene("FriG"); break; }
             case 14: { SceneManager.LoadScene("Stack"); break; }
-            case 15: { Debug.Log("아직 존재하지 않는다."); break; }
-            case 16: { Debug.Log("아직 존재하지 않는다."); break; }
+            case 15: { Debug.Log("GGulIGiT"); break; }
+            case 16: { Debug.Log("GGulIGiG"); break; }
         }
     }
 }
