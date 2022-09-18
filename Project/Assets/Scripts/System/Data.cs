@@ -91,6 +91,7 @@ public class Data : MonoBehaviour
         SaveData(RecipeDatas.Instance.BackUpBone,true);
         RecipeDatas.Instance.LoadRecipe();
         SkillManagement.Instance.LoadSkill();
+        PlayerDataManagement.Instance.LoadPlayerData();
     }
     #endregion
 }

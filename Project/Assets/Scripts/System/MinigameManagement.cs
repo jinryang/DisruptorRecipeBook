@@ -37,7 +37,7 @@ public class MinigameManagement : MonoBehaviour
     public int[] points;
     public int idx = 0;
 
-    public void PlusPoint(int value)
+    public void PlusScore(int value)
     {
         points[idx - 1] += value;
     }
