@@ -20,7 +20,7 @@ public class CookTimer : MonoBehaviour
         else
         {
             text.text = "00:00";
-            //게임 끝내기
+            MinigameManagement.Instance.GoTutorial();
         }
     }
 }
