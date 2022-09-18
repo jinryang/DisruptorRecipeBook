@@ -39,9 +39,19 @@ public class Data : MonoBehaviour
         public int point = 0;
         public List<RecipeDatas.RecipeInfo> recipes;
         public List<SkillManagement.SkillInfo> skills;
+        public bool isFirst = true;
     }
     #region Save&Load
-    public void SaveData(List<RecipeDatas.RecipeInfo> _recipes = null, List<SkillManagement.SkillInfo> _skill = null, int _point = -1)
+
+    private void Start()
+    {
+        if (instance.LoadData().isFirst)
+        {
+            InitData();
+            SaveData(RecipeDatas.Instance.BackUpBone, false);
+        }
+    }
+    public void SaveData(List<RecipeDatas.RecipeInfo> _recipes = null, bool _isfirst = false, List<SkillManagement.SkillInfo> _skill = null, int _point = -1)
     {
         Debug.Log(Application.persistentDataPath);
         JsonData data = new JsonData();
@@ -54,6 +64,8 @@ public class Data : MonoBehaviour
 
         if (-1 == _point) data.point = LoadData().point;
         else data.point = _point;
+
+        data.isFirst = _isfirst;
 
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
@@ -76,7 +88,7 @@ public class Data : MonoBehaviour
     }
     public void InitData()
     {
-        SaveData(RecipeDatas.Instance.BackUpBone);
+        SaveData(RecipeDatas.Instance.BackUpBone,true);
         RecipeDatas.Instance.LoadRecipe();
         SkillManagement.Instance.LoadSkill();
     }
