@@ -15,12 +15,10 @@ public class Temperature : MonoBehaviour
     public void ButtonDown()
     {
         isClick = true;
-        Debug.Log("asdf");
     }
     public void ButtonUp()
     {
         isClick = false;
-        Debug.Log("fdsa");
     }
     void Start()
     {

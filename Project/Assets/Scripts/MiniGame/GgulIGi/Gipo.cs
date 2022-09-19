@@ -6,6 +6,7 @@ public class Gipo : MonoBehaviour
 {
     GgulIGiManager ggulIGiManager;
     public float time = 1.5f;
+    public float popTime = 0.5f;
     void Start()
     {
 
@@ -24,12 +25,16 @@ public class Gipo : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Mouse") && Input.GetMouseButton(0))
         {
-            ggulIGiManager.addScore();
-            Destroy(gameObject);
+            popTime -= Time.deltaTime;
+            if (popTime < 0)
+            {
+                ggulIGiManager.addScore();
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class GgulIGiManager : MonoBehaviour
 {
     [SerializeField] GameObject Bubble;
-    public int score = 0;
     public float BubbleSummonTime = 0.3f;
     private float tempTime;
 
@@ -31,6 +30,6 @@ public class GgulIGiManager : MonoBehaviour
     }
     public void addScore()
     {
-        score += 100;
+        MinigameManagement.Instance.PlusScore(20);
     }
 }
