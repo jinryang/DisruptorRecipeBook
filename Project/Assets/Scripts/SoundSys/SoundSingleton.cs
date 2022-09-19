@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class SoundSingleton : MonoBehaviour
 {
     [SerializeField] AudioClip[] BGM;
@@ -13,6 +15,13 @@ public class SoundSingleton : MonoBehaviour
     private WaitForSeconds wait = new WaitForSeconds(0.01f);
 
     private static SoundSingleton instance = null;
+    enum GameBGM
+    {
+        TheBlueSky,
+        Openning,
+        Cafeteria,
+    }
+
     private void Awake()
     {
         if(instance == null)
