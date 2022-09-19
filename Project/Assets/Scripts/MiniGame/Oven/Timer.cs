@@ -17,6 +17,7 @@ public class Timer : MonoBehaviour
     public GameObject temb;
     public Image temg;
     public TextMeshProUGUI TimeText;
+    public Text outTime;
 
     public int tempoint;
     public int timepoint;
@@ -46,6 +47,7 @@ public class Timer : MonoBehaviour
                     AddTemPoint();
                     po.AddPoint(tempoint);
                     temb.SetActive(true);
+                    outTime.GetComponent<Text>().enabled = true;
                     Invoke("TimeReset", 3.0f);
                 }
             }
@@ -54,6 +56,8 @@ public class Timer : MonoBehaviour
         {
             AddTimePoint();
             po.AddPoint(timepoint + tempoint);
+            MinigameManagement.Instance.SetScore(timepoint + tempoint);
+            MinigameManagement.Instance.GoTutorial();
         }
         TimeText.text = string.Format("{0:N2}", time);
         if (tem.nowtem <= 165 && tem.nowtem >= 155)
