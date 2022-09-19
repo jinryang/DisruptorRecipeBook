@@ -6,7 +6,7 @@ public class SoundSingleton : MonoBehaviour
 {
     [SerializeField] AudioClip[] BGM;
     [SerializeField] AudioClip[] EF;
-    [SerializeField] AudioSource audio;
+    [SerializeField] AudioSource[] audio;
     public float fadeRange;
 
     private WaitForSeconds wait = new WaitForSeconds(0.01f);
@@ -38,36 +38,54 @@ public class SoundSingleton : MonoBehaviour
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0))
+        {
+            audio[1].clip = EF[0];
+            audio[1].Play();
+        }
     }
 
     public void SetSound(bool IsBGM, int numof)
     {
         if (IsBGM == true)
         {
-            audio.clip = BGM[numof];
+            audio[0].clip = BGM[numof];
         }
         else
         {
-            audio.clip = EF[numof];
+            audio[1].clip = EF[numof];
         }
     }
-    public void PlaySound()
+    public void PlaySound(bool IsBGM)
     {
-        audio.Play();
+        if (IsBGM)
+        {
+            audio[0].Play();
+        }
+        else
+        {
+            audio[1].Play();
+        }
     }
 
-    public void Stop()
+    public void Stop(bool IsBGM)
     {
-        audio.Stop();
+        if(IsBGM)
+        {
+            audio[0].Stop();
+        }
+        else
+        {
+            audio[1].Stop();
+        }
+        
     }
 
-    public void FadeInBGM()
+    /*public void FadeInBGM()
     {
         StopAllCoroutines();
         StartCoroutine(FadeIn());
@@ -77,12 +95,13 @@ public class SoundSingleton : MonoBehaviour
     {
         StopAllCoroutines();
         StartCoroutine(FadeOut());
-    }
-    IEnumerator FadeIn()
+    }*/
+
+    /*IEnumerator FadeIn()
     {
         for (float i = 0f; i <= 1f; i += fadeRange)
         {
-            audio.volume = i;
+            audio[0].volume = i;
             yield return wait;
         }
     }
@@ -90,8 +109,8 @@ public class SoundSingleton : MonoBehaviour
     {
         for (float i = 1.0f; i >= 0f; i -= fadeRange)
         {
-            audio.volume = i;
+            audio[0].volume = i;
             yield return wait;
         }
-    }
+    }*/
 }
