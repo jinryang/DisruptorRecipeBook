@@ -1268,6 +1268,7 @@ MonoBehaviour:
   cover: {fileID: 1676541268}
   cut: 0
   cuttimepoint: 0
+  CutButton: {fileID: 1851743074}
 --- !u!114 &1785403503
 MonoBehaviour:
   m_ObjectHideFlags: 0

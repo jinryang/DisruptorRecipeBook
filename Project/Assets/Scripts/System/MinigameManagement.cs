@@ -42,6 +42,11 @@ public class MinigameManagement : MonoBehaviour
         points[idx - 1] += value;
     }
 
+    public void SetScore(int value)
+    {
+        points[idx - 1] = value;
+    }
+
     public void SelectRecipe(int number)
     {
         moveScenes = RecipeDatas.Instance.Recipes[number].moveScene;

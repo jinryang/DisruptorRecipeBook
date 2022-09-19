@@ -11,6 +11,7 @@ public class CutTimer : MonoBehaviour
     public GameObject cover;
     public bool cut;
     public bool cuttimepoint;
+    public GameObject CutButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,8 @@ public class CutTimer : MonoBehaviour
             time = 0;
             cover.SetActive(true);
             cut = false;
+            MinigameManagement.Instance.SetScore(CutButton.GetComponent<Cut>().CutPoint);
+            MinigameManagement.Instance.GoTutorial();
         }
         TimeText.text = string.Format("{0:N2}", time);
     }

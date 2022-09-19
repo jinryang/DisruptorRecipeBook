@@ -75,7 +75,6 @@ public class CreateRaw : MonoBehaviour
 
     public void GetScore(int _point)
     {
-        score += _point;
-        Debug.Log(score);
+        MinigameManagement.Instance.PlusScore(_point);
     }
 }
