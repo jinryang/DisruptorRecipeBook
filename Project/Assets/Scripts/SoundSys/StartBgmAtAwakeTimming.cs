@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StartBgmAtAwakeTimming : MonoBehaviour
 {
-    public bool IsBGM = true;
     public int numof = 0;
     void Start()
     {
