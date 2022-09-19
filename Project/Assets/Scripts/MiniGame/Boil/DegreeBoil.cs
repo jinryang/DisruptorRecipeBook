@@ -11,7 +11,6 @@ public class DegreeBoil : MonoBehaviour
         if (GetComponent<ObjectDragBoil>().onAble && !(GetComponent<ObjectDragBoil>().isMoving))
         {
             degree += Time.deltaTime;
-            Debug.Log(degree);
         }
     }
 

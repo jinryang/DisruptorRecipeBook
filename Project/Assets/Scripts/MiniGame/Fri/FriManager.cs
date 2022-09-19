@@ -9,7 +9,7 @@ public class FriManager : MonoBehaviour
     private Vector3 EndPos;
     private int Friway;
     public float responsiveness;
-    public float score;
+    public int score;
     private bool xIsPerfect = false;
     private bool yIsPerfect = false;
     private bool IsClick = false;
@@ -23,32 +23,24 @@ public class FriManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("click");
             BeginPos = Input.mousePosition;
         }
-        if(Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0))
         {
             Debug.Log("up");
             EndPos = Input.mousePosition;
             judgeDragway(Friway);
         }
-        if(xIsPerfect == true && yIsPerfect == true)
+        if (xIsPerfect == true && yIsPerfect == true)
         {
-            //addscore
-            if (FlipNum <= 0)
-            {
-                //EndOfFlip
-                Debug.Log("FlipIsEnded");
-            }
-            else
-            { 
-                FlipNum--;
-                xIsPerfect = false;
-                yIsPerfect = false;
-                ChooseFriway();
-            }
+            MinigameManagement.Instance.PlusScore(20);
+            FlipNum--;
+            xIsPerfect = false;
+            yIsPerfect = false;
+            ChooseFriway();
         }
     }
 
