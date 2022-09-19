@@ -20,7 +20,7 @@ public class CookTimer : MonoBehaviour
         else
         {
             text.text = "00:00";
-            MinigameManagement.Instance.GoTutorial();
+            MinigameManagement.Instance.GoTutorial();   
         }
     }
 }

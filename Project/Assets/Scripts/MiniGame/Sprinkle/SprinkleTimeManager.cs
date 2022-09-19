@@ -9,43 +9,18 @@ public class SprinkleTimeManager : MonoBehaviour
     public bool IsClick = false; //Express Player is clicking
     private bool IsOnPlace = false;
     [SerializeField] SprinkleManager sprinkleManager;
-    void Start()
-    {
-        
-    }
-    private void OnMouseEnter()
-    {
-        IsOnPlace = true;
-    }
 
-    private void OnMouseExit()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        IsOnPlace = false;
-        sprinkleManager.InteractPos--;
-        IsClick = false;
-    }
-    private void OnMouseUp()
-    {
-        sprinkleManager.InteractPos--;
-        IsClick = false;
-    }
-    void Update()
-    {
-        if(sprinkleManager.InteractPos < 0)
-        {
-            sprinkleManager.InteractPos = 0;
-        }
-        if (IsOnPlace && Input.GetMouseButtonDown(0))
-        {
-            sprinkleManager.InteractPos++;
-            IsClick = true;
-        }
-
-        if (IsClick == true && sprinkleManager.InteractPos == 1)
+        if(collision.CompareTag("Mouse"))
         {
             time -= Time.deltaTime;
         }
+    }
 
+    void Update()
+    {
+       
         if (time <= 0)
         {
             IsEnded = true;
