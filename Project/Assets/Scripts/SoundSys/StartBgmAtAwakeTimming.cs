@@ -8,8 +8,7 @@ public class StartBgmAtAwakeTimming : MonoBehaviour
     public int numof = 0;
     void Start()
     {
-        SoundSingleton.Instance.SetSound(IsBGM, numof);
-        SoundSingleton.Instance.PlaySound(IsBGM);
+        SoundSingleton.Instance.StartBGM(0);
     }
 
     // Update is called once per frame

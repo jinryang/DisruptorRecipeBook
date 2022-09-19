@@ -7,6 +7,7 @@ public class SoundSingleton : MonoBehaviour
     [SerializeField] AudioClip[] BGM;
     [SerializeField] AudioClip[] EF;
     [SerializeField] AudioSource[] audio;
+    [SerializeField] AudioSource click;
     public float fadeRange;
 
     private WaitForSeconds wait = new WaitForSeconds(0.01f);
@@ -38,51 +39,36 @@ public class SoundSingleton : MonoBehaviour
 
     private void Start()
     {
-    }
+    }   
 
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            audio[1].clip = EF[0];
-            audio[1].Play();
+            click.Play();
         }
+    }//bgm = audio[0]
+    //ef = audio[1]
+
+    public void StartBGM(int index)
+    {
+        audio[0].clip = BGM[index];
+        audio[0].Play();
+    }
+    public void StartEF(int index)
+    {
+        audio[1].clip = EF[index];
+        audio[1].Play();
     }
 
-    public void SetSound(bool IsBGM, int numof)
+    public void StopBGM()
     {
-        if (IsBGM == true)
-        {
-            audio[0].clip = BGM[numof];
-        }
-        else
-        {
-            audio[1].clip = EF[numof];
-        }
-    }
-    public void PlaySound(bool IsBGM)
-    {
-        if (IsBGM)
-        {
-            audio[0].Play();
-        }
-        else
-        {
-            audio[1].Play();
-        }
+        audio[0].Stop();
     }
 
-    public void Stop(bool IsBGM)
+    public void StopEF()
     {
-        if(IsBGM)
-        {
-            audio[0].Stop();
-        }
-        else
-        {
-            audio[1].Stop();
-        }
-        
+        audio[1].Stop();
     }
 
     /*public void FadeInBGM()
