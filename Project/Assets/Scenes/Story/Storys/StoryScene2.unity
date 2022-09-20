@@ -949,13 +949,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cover: {fileID: 461072822}
   dialogue:
-    name: han co
+    Names:
+    - 
+    - 
+    - "\uBBFC\uC2DD"
+    - "-\uAC1C\uAD6C\uB9AC\uB4E4-"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
     Sentences:
-    - "\uD788\uD788"
-    - asda
-    - asdafadggaf
-    - asbabjadjbabjkkbjajbkasfbjkasfjbkajbkasfkbjasfjbkasbjkbjkbjasfkbjsajbkkbjsfkbjafjbkasfbjkasjbkasfjbkasfsafasfasfssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-    - wqerq
+    - 
+    - "(\uD638\uC218\uAC00\uB97C \uAC78\uC73C\uBA70)"
+    - "\uC74C...\uC800\uBC88 \uBCA0\uC2A4\uB294 \uAF64 \uC131\uACF5\uC801\uC774\uC600\uC5B4
+      \uADF8\uB7FC \uC774\uBC88\uC5D0\uB294 \uBB58\uD558\uC9C0?"
+    - "'\uAC1C\uAD74\uAC1C\uAD74'"
+    - "\uAC1C\uAD6C\uB9AC\uB4E4\uC774 \uC2DC\uB044\uB7EC\uC6CC\uC11C \uC9D1\uC911\uC774
+      \uC548\uB418\uB124"
+    - "\uC7A0\uC2DC\uB9CC....\uAC1C\uAD6C\uB9AC? \uAD50\uB780\uC885 \uAC1C\uAD6C\uB9AC\uAC00
+      \uC788\uB2E4\uB294 \uAC83\uC744 \uC608\uC804\uC5D0 \uB274\uC2A4\uC5D0\uC11C
+      \uBCF8 \uAC83 \uAC19\uC740\uB370?\r"
+    - "\uCC3E\uC558\uB2E4! \uD669\uC18C\uAC1C\uAD6C\uB9AC!"
+    - "\uC6D0\uB798 \uC2DD\uC6A9\uC73C\uB85C \uC218\uC785\uB418\uC5C8\uC73C\uBA74
+      \uBA39\uC744 \uC218 \uC788\uACA0\uB2E4.\r\n\uAC8C\uB2E4\uAC00 \uAC1C\uAD6C\uB9AC\uACE0\uAE30\uB294
+      \uB2ED\uACE0\uAE30\uC640 \uB9DB\uC774 \uBE44\uC2B7\uD558\uB2E4\uACE0 \uD588\uC73C\uB2C8
+      \uD280\uAE40\uC73C\uB85C \uB9CC\uB4E4\uC5B4 \uBCFC\uAE4C?"
 --- !u!114 &1610233301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,7 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
