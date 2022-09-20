@@ -18,38 +18,38 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/StorySelectScene.unity
     guid: c834dd6f6e0a4054db78c7f9f05cbe4b
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/EndingScene.unity
-    guid: 4a3d9b84b609efe449cb56cf5abbd6db
-  - enabled: 1
     path: Assets/Scenes/Story/Storys/PrologueScene.unity
     guid: 0f24fffb0450f5a468fe516dd4be93b4
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene1.unity
-    guid: 02a06a088cb18e548baed918ac7f0c87
+    path: Assets/Scenes/Story/Storys/StoryScene1.unity
+    guid: 02797acfd67cf924380cac72ba5d911a
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene2.unity
-    guid: 2bf238d50cb46994ab1f789e60f50f6d
+    path: Assets/Scenes/Story/Storys/StoryScene2.unity
+    guid: 318470185bf47894d80d0c9c671c1355
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene3.unity
-    guid: 40ec40af600c35043b5a4f536ff7c98c
+    path: Assets/Scenes/Story/Storys/StoryScene3.unity
+    guid: 7276e24884fed1b4a9e0aac4cf804a88
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene4.unity
-    guid: 1274a91a9f4c2c34db726effb14b162b
+    path: Assets/Scenes/Story/Storys/StoryScene4.unity
+    guid: f13aba3ac9ea2444780c854c9ce2264d
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene5.unity
-    guid: 6da40b2f93a46994abf36f75a21008bc
+    path: Assets/Scenes/Story/Storys/StoryScene5.unity
+    guid: 5ec6288b485710e4b8aea6b827903dd4
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene6.unity
-    guid: e5a447be0d44db8418b2310e8b2e0305
+    path: Assets/Scenes/Story/Storys/StoryScene6.unity
+    guid: b88c243de71747047b44fa87aa44bd8f
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene7.unity
-    guid: 5291dafb1a9de874f85e566466bc5761
+    path: Assets/Scenes/Story/Storys/StoryScene7.unity
+    guid: b0cbf0c2781611a419bf91f64ff0e43d
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene8.unity
-    guid: df467fa2498f22449b76444e4cbc94b5
+    path: Assets/Scenes/Story/Storys/StoryScene8.unity
+    guid: 2706fb1cbf97e8849bdb7b75402714be
   - enabled: 1
-    path: Assets/Scenes/Story/Stories/StoryScene9.unity
-    guid: 9a1ac6be88d857b4991cbb297b7c9a39
+    path: Assets/Scenes/Story/Storys/StoryScene9.unity
+    guid: 36d408d5b2d4c4a4884c152d286ed91a
+  - enabled: 1
+    path: Assets/Scenes/Story/Storys/EndingScene.unity
+    guid: c3802bebbd85cb641817f5fbd0b2fa52
   - enabled: 1
     path: Assets/Scenes/Store.unity
     guid: ff990210ae603dc41a00ce49e8e5e332
