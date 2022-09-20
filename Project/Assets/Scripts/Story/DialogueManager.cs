@@ -7,29 +7,35 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshProUGUI NameText;
-    public TextMeshProUGUI DialogueText;
+    public Text NameText;
+    public Text DialogueText;
 
     public Animator animator;
 
     public Queue<string> Sentences;
+    public Queue<string> Names;
 
     void Start()
     {
         Sentences = new Queue<string>();
+        Names = new Queue<string>();
     }
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
 
-        NameText.text = dialogue.name;
-
         Sentences.Clear();
+        Names.Clear();
         foreach(string sentence in dialogue.Sentences)
         {
             Sentences.Enqueue(sentence);
         }
+        foreach(string names in dialogue.Names)
+        {
+            Names.Enqueue(names);
+        }
         DisplayNextSentence();
+        DisplayNextName();
     }
     public void DisplayNextSentence()
     {
@@ -42,6 +48,16 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(Sentence));
     }
+    public void DisplayNextName()
+    {
+        if (Names.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
+        string Name = Names.Dequeue();
+        NameText.text = Name;
+    }
     IEnumerator TypeSentence(string Sentence)
     {
         DialogueText.text = "";
@@ -51,7 +67,6 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
     }
-
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
