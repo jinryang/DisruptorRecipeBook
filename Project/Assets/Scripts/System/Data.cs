@@ -44,8 +44,8 @@ public class Data : MonoBehaviour
         public List<RecipeDatas.RecipeInfo> recipes;
         public List<SkillManagement.SkillInfo> skills;
     }
-    #region Save&Load
 
+    #region Save&Load
     public void SaveData(List<RecipeDatas.RecipeInfo> _recipes, List<SkillManagement.SkillInfo> _skill, int _point)
     {
         Debug.Log(Application.persistentDataPath);
@@ -69,6 +69,7 @@ public class Data : MonoBehaviour
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
+
     public void SaveSkill(List<SkillManagement.SkillInfo> _skill)
     {
         Debug.Log(Application.persistentDataPath);
@@ -80,7 +81,6 @@ public class Data : MonoBehaviour
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
-
     public void SavePoint(int _point)
     {
         Debug.Log(Application.persistentDataPath);
@@ -92,7 +92,6 @@ public class Data : MonoBehaviour
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
-
     public JsonData LoadData()
     {
         Debug.Log(Application.persistentDataPath);
