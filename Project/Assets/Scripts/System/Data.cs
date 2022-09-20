@@ -19,6 +19,10 @@ public class Data : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (!File.Exists(Application.persistentDataPath + "/savefile.json"))
+        {
+            InitData();
+        }
     }
     public static Data Instance
     {
@@ -42,24 +46,53 @@ public class Data : MonoBehaviour
     }
     #region Save&Load
 
-    public void SaveData(List<RecipeDatas.RecipeInfo> _recipes = null,  List<SkillManagement.SkillInfo> _skill = null, int _point = -1)
+    public void SaveData(List<RecipeDatas.RecipeInfo> _recipes, List<SkillManagement.SkillInfo> _skill, int _point)
     {
         Debug.Log(Application.persistentDataPath);
         JsonData data = new JsonData();
 
-        if (null == _recipes) data.recipes = LoadData().recipes;
-        else data.recipes = _recipes;
-
-        if (null == _skill) data.skills = LoadData().skills;
-        else data.skills = _skill;
-
-        if (-1 == _point) data.point = LoadData().point;
-        else data.point = _point;
-
+        data.recipes = _recipes;
+        data.skills = _skill;
+        data.point = _point;
 
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
+    public void SaveRecipe(List<RecipeDatas.RecipeInfo> _recipes)
+    {
+        Debug.Log(Application.persistentDataPath);
+        JsonData data = new JsonData();
+
+        data = LoadData();
+        data.recipes = _recipes;
+
+        string json = JsonUtility.ToJson(data);
+        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+    }
+    public void SaveSkill(List<SkillManagement.SkillInfo> _skill)
+    {
+        Debug.Log(Application.persistentDataPath);
+        JsonData data = new JsonData();
+
+        data = LoadData();
+        data.skills = _skill;
+
+        string json = JsonUtility.ToJson(data);
+        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+    }
+
+    public void SavePoint(int _point)
+    {
+        Debug.Log(Application.persistentDataPath);
+        JsonData data = new JsonData();
+
+        data = LoadData();
+        data.point = _point;
+
+        string json = JsonUtility.ToJson(data);
+        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+    }
+
     public JsonData LoadData()
     {
         Debug.Log(Application.persistentDataPath);
@@ -78,7 +111,7 @@ public class Data : MonoBehaviour
     }
     public void InitData()
     {
-        SaveData(RecipeDatas.Instance.BackUpBone);
+        SaveData(RecipeDatas.Instance.BackUpBone, SkillManagement.Instance.BackUpBone, 0);
         RecipeDatas.Instance.LoadRecipe();
         SkillManagement.Instance.LoadSkill();
         PlayerDataManagement.Instance.LoadPlayerData();
