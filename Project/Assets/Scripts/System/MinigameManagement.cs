@@ -36,7 +36,7 @@ public class MinigameManagement : MonoBehaviour
     public int[] moveScenes;
     public int[] points;
     public int idx = 0;
-
+    
     public void PlusScore(int value)
     {
         points[idx - 1] += value;
@@ -56,10 +56,7 @@ public class MinigameManagement : MonoBehaviour
 
     public void GoTutorial()
     {
-        if (idx >= moveScenes.Length)
-        {
-            SceneManager.LoadScene("ScoreCalculation");
-        }
+        ChackFinal();
         switch (moveScenes[idx])
         {
             case 1:
@@ -136,6 +133,13 @@ public class MinigameManagement : MonoBehaviour
             case 14: { SceneManager.LoadScene("Stack"); break; }
             case 15: { Debug.Log("GGulIGiT"); break; }
             case 16: { Debug.Log("GGulIGiG"); break; }
+        }
+    }
+    public void ChackFinal()
+    {
+        if (idx >= moveScenes.Length)
+        {
+            SceneManager.LoadScene("ScoreCalculation");
         }
     }
 }

@@ -14,21 +14,25 @@ public class UpDropPoint : MonoBehaviour
         if (transform.position.x >= -1 && transform.position.x <= 1)
         {
             UPDP = 50;
+            MinigameManagement.Instance.PlusScore(UPDP);
             dropPoint.DP += UPDP;
         }
         else if(transform.position.x >= -3 && transform.position.x <= 3)
         {
             UPDP = 30;
+            MinigameManagement.Instance.PlusScore(UPDP);
             dropPoint.DP += UPDP;
         }
         else if (transform.position.x >= -6 && transform.position.x <= 6)
         {
             UPDP = 20;
+            MinigameManagement.Instance.PlusScore(UPDP);
             dropPoint.DP += UPDP;
         }
         else if (transform.position.x >= -10 && transform.position.x <= 10)
         {
             UPDP = 1;
+            MinigameManagement.Instance.PlusScore(UPDP);
             dropPoint.DP += UPDP;
         }
     }
