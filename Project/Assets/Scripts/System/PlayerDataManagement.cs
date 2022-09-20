@@ -38,7 +38,6 @@ public class PlayerDataManagement : MonoBehaviour
         get { return point; }
     }
 
-
     public void LoadPlayerData()
     {
         point = Data.Instance.LoadData().point;
