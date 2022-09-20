@@ -9,6 +9,8 @@ public class ResultScore : MonoBehaviour
     [SerializeField] private Text t2;
     [SerializeField] private Text t3;
     [SerializeField] private Text result;
+    [SerializeField] private Text PointText;
+
     private int length = 0;
 
     void Start()
@@ -21,26 +23,29 @@ public class ResultScore : MonoBehaviour
             case 1:
                 t1.text = MinigameManagement.Instance.points[0].ToString();
                 point = MinigameManagement.Instance.points[0];
-                result.text = point.ToString();
+                result.text = point.ToString() + "점";
+                PointText.text = (point / 100).ToString() + "로 환산됩니다.";
                 break;
             case 2:
                 t1.text = MinigameManagement.Instance.points[0].ToString();
                 t2.text = MinigameManagement.Instance.points[1].ToString();
                 point = (MinigameManagement.Instance.points[0] + MinigameManagement.Instance.points[1]);
-                result.text = point.ToString();
+                result.text = point.ToString() + "점";
+                PointText.text = (point / 100).ToString() + "로 환산됩니다.";
                 break;
             case 3:
                 t1.text = MinigameManagement.Instance.points[0].ToString();
                 t2.text = MinigameManagement.Instance.points[1].ToString();
                 t3.text = MinigameManagement.Instance.points[2].ToString();
                 point = (MinigameManagement.Instance.points[0] + MinigameManagement.Instance.points[1] + MinigameManagement.Instance.points[2]);
-                result.text = point.ToString();
+                result.text = point.ToString()+"점";
+                PointText.text = (point/100).ToString() + "로 환산됩니다.";
                 break;
             default:
                 point = 0;
                 break;
         }
 
-        PlayerDataManagement.Instance.PlusPoint(point);
+        PlayerDataManagement.Instance.PlusPoint(point/100);
     }
 }
