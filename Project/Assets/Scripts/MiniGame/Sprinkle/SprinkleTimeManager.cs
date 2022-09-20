@@ -6,20 +6,31 @@ public class SprinkleTimeManager : MonoBehaviour
 {
     public float time; //SprinkleTime
     public bool IsEnded = false; //Express the Sprinkle is Ended-this point
-    public bool IsClick = false; //Express Player is clicking
-    private bool IsOnPlace = false;
+    public bool IsChcking = false; //Express Player is clicking
     [SerializeField] SprinkleManager sprinkleManager;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.CompareTag("Mouse"))
         {
-            time -= Time.deltaTime;
+            IsChcking = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Mouse"))
+        {
+            IsChcking = false;
         }
     }
 
     void Update()
     {
+        if(IsChcking)
+        {
+            time -= Time.deltaTime;
+        }
        
         if (time <= 0)
         {

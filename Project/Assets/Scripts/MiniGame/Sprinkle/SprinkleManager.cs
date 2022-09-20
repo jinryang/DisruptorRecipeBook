@@ -7,40 +7,56 @@ public class SprinkleManager : MonoBehaviour
     [SerializeField] SprinkleTimeManager[] sprinklePos;
     public int InteractPos = 0; // number of interacting SprinklePos
     private int cnt = 0; // number of endedPos
-    public float score;
+    private int score;
     private float time;
     private bool IsClick = false;
+    public GameObject Timer;
+
     void Start()
     {
+        score = 0;
         time = 0;
     }
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
+        if (Timer.GetComponent<CookTimer>().timer <= 0)
+        {
+            Finish();
+        }
+        if (Input.GetMouseButtonDown(1))
         {
             IsClick = true;
         }
-        if(IsClick)
+        if (IsClick)
         {
             time += Time.deltaTime;
         }
         cnt = 0;
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
-            if(sprinklePos[i].IsEnded == true)
+            if (sprinklePos[i].IsEnded == true)
             {
                 cnt++;
             }
-            if(cnt == 4)
+            if (cnt == 4)
             {
-                Debug.Log("End");
-                //»Ñ¸®±â ³¡
+                Finish();
             }
         }
-        
+
     }
 
-
-    
+    public void Finish()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if (sprinklePos[i].IsEnded)
+                score += 100;
+            else
+                score -= 50;
+        }
+        MinigameManagement.Instance.SetScore(score);
+        MinigameManagement.Instance.GoTutorial();
+    }
 }
