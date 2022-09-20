@@ -4,12 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Scenes: []
-=======
-<<<<<<< HEAD
-  m_Scenes: []
-=======
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/TitleScene.unity
@@ -21,30 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectScene.unity
     guid: 1c2ace1e2557ec54396b5c6f86665ad1
   - enabled: 1
+    path: Assets/Scenes/Store.unity
+    guid: ff990210ae603dc41a00ce49e8e5e332
+  - enabled: 1
     path: Assets/Scenes/Story/StorySelectScene.unity
     guid: c834dd6f6e0a4054db78c7f9f05cbe4b
-<<<<<<< HEAD
+  - enabled: 1
+    path: Assets/Scenes/Story/Storys/EndingScene.unity
+    guid: c3802bebbd85cb641817f5fbd0b2fa52
   - enabled: 1
     path: Assets/Scenes/Story/Storys/PrologueScene.unity
     guid: 0f24fffb0450f5a468fe516dd4be93b4
-=======
-<<<<<<< HEAD
-=======
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
->>>>>>> dd95b670a05f3520c46c382c6d615b5f13485f58
   - enabled: 1
-    path: Assets/Scenes/Story/Storys/PrologueScene.unity
-    guid: 0f24fffb0450f5a468fe516dd4be93b4
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-<<<<<<< HEAD
     path: Assets/Scenes/Story/Storys/StoryScene1.unity
     guid: 02797acfd67cf924380cac72ba5d911a
   - enabled: 1
@@ -72,65 +54,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/Storys/StoryScene9.unity
     guid: 36d408d5b2d4c4a4884c152d286ed91a
   - enabled: 1
-    path: Assets/Scenes/Story/Storys/EndingScene.unity
-    guid: c3802bebbd85cb641817f5fbd0b2fa52
-=======
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
->>>>>>> dd95b670a05f3520c46c382c6d615b5f13485f58
->>>>>>> a5286f0a8a6bda0dd45aa429118aad126733d0d7
-  - enabled: 1
-    path: Assets/Scenes/Store.unity
-    guid: ff990210ae603dc41a00ce49e8e5e332
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/BoilHow.unity
-    guid: 514c4d46b2e094048bf4afd89ee999cf
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/CutSceneHow.unity
-    guid: 314ee1124fd1be84c85850d33f55cfc5
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/FriHow.unity
-    guid: e525cf37563dea144bcd7438eb10a24c
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/GGulIGiHow.unity
-    guid: 4da871b1655b85848a4f7c330216df81
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/GubGiPenHow.unity
-    guid: b36e8387a598d4a4db4affc45d91938b
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/HowToPlay.unity
-    guid: 9e0db0d1efe258e4e989bb2ea643cba9
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/OilFriHow.unity
-    guid: b60f956e6957fbe43985f45a4ab40b75
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/OvenSceneHow.unity
-    guid: a909f42848bce9144bb2655f16490423
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/SprinkleHow.unity
-    guid: f53b22989d8bce747941e5c5f2be73cf
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay/StackHow.unity
-    guid: ff6563412d63b894a9b8f66cd41b0335
-  - enabled: 1
     path: Assets/Scenes/MiniGame/BoilG.unity
     guid: fcffb0ad81c6c0c4a95f09394f78d1ec
   - enabled: 1
@@ -143,11 +66,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGame/FriG.unity
     guid: 66eacbd9d36a03844833525268d31685
   - enabled: 1
-    path: Assets/Scenes/MiniGame/GGulIGiT.unity
-    guid: 071abd6372b1e4147ab0413e500db233
-  - enabled: 1
     path: Assets/Scenes/MiniGame/GGulIGiG.unity
     guid: 7799461deb097a04bb110b75b6c7566f
+  - enabled: 1
+    path: Assets/Scenes/MiniGame/GGulIGiT.unity
+    guid: 071abd6372b1e4147ab0413e500db233
   - enabled: 1
     path: Assets/Scenes/MiniGame/GubGiPenB.unity
     guid: b9618be4cd8cca941b717d80756773ed
@@ -179,8 +102,36 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGame/Stack.unity
     guid: c783b4287c40e514ca1e44602a742e3a
   - enabled: 1
+    path: Assets/Scenes/MiniGame/Steamming.unity
+    guid: 832b32eee119cb04e8cde86022eab8bf
+  - enabled: 1
     path: Assets/Scenes/MiniGame/EndMiniGame/ScoreCalculation.unity
     guid: 14da889e734118640ad1f38ae440b4db
->>>>>>> fa9155b862c566708ec43e7e3410d15ae08295a2
->>>>>>> 81620e1a8547d82b5932b16bc013c6075b5e5649
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/BoilHow.unity
+    guid: 514c4d46b2e094048bf4afd89ee999cf
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/CutSceneHow.unity
+    guid: 314ee1124fd1be84c85850d33f55cfc5
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/FriHow.unity
+    guid: e525cf37563dea144bcd7438eb10a24c
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/GGulIGiHow.unity
+    guid: 4da871b1655b85848a4f7c330216df81
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/GubGiPenHow.unity
+    guid: b36e8387a598d4a4db4affc45d91938b
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/OilFriHow.unity
+    guid: b60f956e6957fbe43985f45a4ab40b75
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/OvenSceneHow.unity
+    guid: a909f42848bce9144bb2655f16490423
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/SprinkleHow.unity
+    guid: f53b22989d8bce747941e5c5f2be73cf
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/StackHow.unity
+    guid: ff6563412d63b894a9b8f66cd41b0335
   m_configObjects: {}
