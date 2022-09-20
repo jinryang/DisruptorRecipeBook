@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerPoint : MonoBehaviour
 {
-    public int NowPoint = 1000;
+    public int NowPoint = 0;
     public Text nowpointtext;
     // Start is called before the first frame update
     void Start()
     {
-        
+        NowPoint = PlayerDataManagement.Instance.Point;
     }
 
     // Update is called once per frame

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CookTimer : MonoBehaviour
 {
-    [SerializeField] private float timer;
+    public float timer;
     Text text;
 
     private void Start()

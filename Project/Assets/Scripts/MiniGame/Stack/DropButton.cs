@@ -21,5 +21,14 @@ public class DropButton : MonoBehaviour
         StopDrop += 1;
         if(StopDrop <= maxDrop)
             move.stop = 1;
+        else
+        {
+            Invoke("MoveScene", 3.5f);
+        }
+    }
+    
+    public void MoveScene()
+    {
+        MinigameManagement.Instance.GoTutorial();
     }
 }

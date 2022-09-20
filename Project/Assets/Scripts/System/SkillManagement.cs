@@ -49,7 +49,7 @@ public class SkillManagement : MonoBehaviour
     public void GetSkill(int _idx)
     {
         Skills[_idx].isHold = true;
-        Data.Instance.SaveData(null, false, Skills);
+        Data.Instance.SaveSkill(Skills);
     }
 
     public void LoadSkill()

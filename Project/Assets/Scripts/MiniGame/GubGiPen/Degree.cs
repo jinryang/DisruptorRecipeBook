@@ -11,7 +11,6 @@ public class Degree : MonoBehaviour
         if (GetComponent<ObjectDrag>().onAble && !(GetComponent<ObjectDrag>().isMoving))
         {
             degree += Time.deltaTime;
-            Debug.Log(degree);
         }
     }
 

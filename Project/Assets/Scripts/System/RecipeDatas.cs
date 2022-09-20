@@ -50,7 +50,7 @@ public class RecipeDatas : MonoBehaviour
     public void GetRecipe(int _idx)
     {
         Recipes[_idx].isHold = true;
-        Data.Instance.SaveData(Recipes);
+        Data.Instance.SaveRecipe(Recipes);
     }
 
     public void LoadRecipe()
