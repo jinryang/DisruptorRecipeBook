@@ -33,7 +33,7 @@ public class PlayerDataManagement : MonoBehaviour
     #endregion
 
     private static int point = 0;
-    public static int Point
+    public int Point
     {
         get { return point; }
     }
@@ -43,9 +43,14 @@ public class PlayerDataManagement : MonoBehaviour
         point = Data.Instance.LoadData().point;
     }
 
-    public void PlusPoint(int _point)
+    public void PlusPoint(int value)
     {
-        point += _point;
-        Data.Instance.SaveData(null, false, null, 0);
+        point += value;
+        Data.Instance.SaveData(null, false, null, point);
+    }
+    public void MinusPoint(int value)
+    {
+        point -= value;
+        Data.Instance.SaveData(null, false, null, point);
     }
 }
