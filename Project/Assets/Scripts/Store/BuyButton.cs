@@ -23,10 +23,11 @@ public class BuyButton : MonoBehaviour
     }
     public void Buy()
     {
-        Destroy(gameObject);
         if(ppoint.NowPoint >= BuyPoint)
         {
             ppoint.NowPoint -= BuyPoint;
+            PlayerDataManagement.Instance.MinusPoint(BuyPoint);
+            Destroy(gameObject);
         }
         else
         {
