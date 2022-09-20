@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/StorySelectScene.unity
     guid: c834dd6f6e0a4054db78c7f9f05cbe4b
   - enabled: 1
-    path: Assets/Scenes/Story/EndingScene.unity
+    path: Assets/Scenes/Story/Stories/EndingScene.unity
     guid: 4a3d9b84b609efe449cb56cf5abbd6db
   - enabled: 1
     path: Assets/Scenes/Store.unity
