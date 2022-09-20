@@ -17,10 +17,23 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story/StorySelectScene.unity
     guid: c834dd6f6e0a4054db78c7f9f05cbe4b
+<<<<<<< HEAD
+=======
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+>>>>>>> dd95b670a05f3520c46c382c6d615b5f13485f58
   - enabled: 1
     path: Assets/Scenes/Story/Storys/PrologueScene.unity
     guid: 0f24fffb0450f5a468fe516dd4be93b4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Story/Storys/StoryScene1.unity
     guid: 02797acfd67cf924380cac72ba5d911a
   - enabled: 1
@@ -50,6 +63,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story/Storys/EndingScene.unity
     guid: c3802bebbd85cb641817f5fbd0b2fa52
+=======
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+>>>>>>> dd95b670a05f3520c46c382c6d615b5f13485f58
   - enabled: 1
     path: Assets/Scenes/Store.unity
     guid: ff990210ae603dc41a00ce49e8e5e332
