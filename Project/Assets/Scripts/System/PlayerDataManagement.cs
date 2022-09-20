@@ -46,11 +46,11 @@ public class PlayerDataManagement : MonoBehaviour
     public void PlusPoint(int value)
     {
         point += value;
-        Data.Instance.SaveData(null, false, null, point);
+        Data.Instance.SaveData(null,  null, point);
     }
     public void MinusPoint(int value)
     {
         point -= value;
-        Data.Instance.SaveData(null, false, null, point);
+        Data.Instance.SaveData(null,  null, point);
     }
 }
