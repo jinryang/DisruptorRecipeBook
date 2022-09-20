@@ -6,6 +6,13 @@ using UnityEngine;
 
 public class SoundSingleton : MonoBehaviour
 {
+    enum GameBGM
+    {
+        TheBlueSky,
+        Openning,
+        Cafeteria,
+    }
+
     [SerializeField] AudioClip[] BGM;
     [SerializeField] AudioClip[] EF;
     [SerializeField] AudioSource[] audio;
@@ -14,14 +21,8 @@ public class SoundSingleton : MonoBehaviour
 
     private WaitForSeconds wait = new WaitForSeconds(0.01f);
 
+    #region Singleton
     private static SoundSingleton instance = null;
-    enum GameBGM
-    {
-        TheBlueSky,
-        Openning,
-        Cafeteria,
-    }
-
     private void Awake()
     {
         if(instance == null)
@@ -45,10 +46,7 @@ public class SoundSingleton : MonoBehaviour
             return instance;
         }
     }
-
-    private void Start()
-    {
-    }   
+    #endregion
 
     void Update()
     {

@@ -38,9 +38,4 @@ public class BuyButton : MonoBehaviour
     {
         nopoint.SetActive(false);
     }
-
-    public void BackButton()
-    {
-        SceneManager.LoadScene(gameObject.name);
-    }
 }
