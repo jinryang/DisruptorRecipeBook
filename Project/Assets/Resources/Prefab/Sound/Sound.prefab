@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6059779167276057437}
   - component: {fileID: 6059779167276057434}
-  - component: {fileID: 6059779167276057436}
   - component: {fileID: 6059779167276057439}
   - component: {fileID: 6059779167276057438}
   - component: {fileID: 6059779167276057409}
@@ -65,14 +64,6 @@ MonoBehaviour:
   - {fileID: 6059779167276057408}
   click: {fileID: 6059779167276057409}
   fadeRange: 1
---- !u!81 &6059779167276057436
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6059779167276057435}
-  m_Enabled: 1
 --- !u!82 &6059779167276057439
 AudioSource:
   m_ObjectHideFlags: 0
@@ -180,7 +171,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.632
   m_Pitch: 1
   Loop: 0
@@ -276,7 +267,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cfa9ce6820753de42a2ad2f68991b175, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -372,7 +363,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -468,7 +459,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -564,7 +555,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
