@@ -70,7 +70,7 @@ EditorBuildSettings:
     guid: 14da889e734118640ad1f38ae440b4db
   - enabled: 1
     path: Assets/Scenes/Story/StorySelectScene.unity
-    guid: c834dd6f6e0a4054db78c7f9f05cbe4b
+    guid: d68b36dd8b7520f46ab019e3d7895869
   - enabled: 1
     path: Assets/Scenes/Story/Storys/EndingScene.unity
     guid: c3802bebbd85cb641817f5fbd0b2fa52
