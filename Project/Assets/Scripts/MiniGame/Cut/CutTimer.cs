@@ -7,7 +7,7 @@ using TMPro;
 public class CutTimer : MonoBehaviour
 {
     public float time = 10;
-    public TextMeshProUGUI TimeText;
+    public Text TimeText;
     public GameObject cover;
     public bool cut;
     public bool cuttimepoint;

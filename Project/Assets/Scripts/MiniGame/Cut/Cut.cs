@@ -13,7 +13,7 @@ public class Cut : MonoBehaviour
     public float CutSpeed = 2;
     public GameObject TimeStop;
     public GameObject cover;
-    public TextMeshProUGUI CutText;
+    public Text CutText;
     public int CutPoint = 0;
     // Start is called before the first frame update
     void Start()
