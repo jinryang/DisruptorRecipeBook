@@ -7,7 +7,7 @@ using TMPro;
 public class Point : MonoBehaviour
 {
     private int point;
-    public TextMeshProUGUI pointtext;
+    public Text pointtext;
     // Start is called before the first frame update
     void Start()
     {
