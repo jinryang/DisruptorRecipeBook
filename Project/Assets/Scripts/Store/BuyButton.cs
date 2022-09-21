@@ -13,7 +13,7 @@ public class BuyButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,10 +23,11 @@ public class BuyButton : MonoBehaviour
     }
     public void Buy()
     {
-        if(ppoint.NowPoint >= BuyPoint)
+        if (ppoint.NowPoint >= BuyPoint)
         {
             ppoint.NowPoint -= BuyPoint;
             PlayerDataManagement.Instance.MinusPoint(BuyPoint);
+            RecipeDatas.Instance.GetRecipe(int.Parse(transform.parent.name));
             Destroy(gameObject);
         }
         else
