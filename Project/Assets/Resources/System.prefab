@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &411203418036580558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411203418036580548}
+  - component: {fileID: 411203418036580549}
+  - component: {fileID: 411203418036580546}
+  - component: {fileID: 411203418036580547}
+  - component: {fileID: 411203418036580544}
+  - component: {fileID: 411203418036580545}
+  m_Layer: 0
+  m_Name: System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411203418036580548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411203418036580558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411203418036580549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411203418036580558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e160b77d2c43524f9774b5c168d212d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Recipes:
+  - Name: "\uBCA0\uC2A4 \uAD6C\uC774"
+    Food: {fileID: 21300000, guid: 77cb1c7b828792b4db9c5e19cb00d955, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 1
+    moveScene: 0700000001000000
+  - Name: "\uD669\uC18C\uAC1C\uAD6C\uB9AC \uB2E4\uB9AC \uD280\uAE40"
+    Food: {fileID: 21300000, guid: 9cc23494f45bc164db402d403d496b71, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 080000000c000000
+  - Name: "\uBBF8\uAD6D\uAC00\uC7AC \uB9C8\uB77C\uB871\uC0E4"
+    Food: {fileID: 21300000, guid: fbeeba5f813910e4e860642c136befb4, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 050000000d000000
+  - Name: "\uB274\uD2B8\uB9AC\uC544 \uACE0\uAE30\uC644\uC790"
+    Food: {fileID: 21300000, guid: 06787d41e52a63546afecc9cb0f99e75, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 0a0000000b000000
+  - Name: "\uD2F8\uB77C\uD53C\uC544 \uC870\uB9BC"
+    Food: {fileID: 0}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 060000000f000000
+  - Name: "\uC0BD\uACB9\uC0B4 \uAC00\uC2DC \uC0C1\uCD94\uC308"
+    Food: {fileID: 21300000, guid: 9f82e06f5d9c2a046b4d726a2e28e9a6, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 03000000
+  - Name: "\uBBF8\uAD6D\uAC00\uC7AC \uB77C\uBA74"
+    Food: {fileID: 21300000, guid: 1fea36a311fdf644298b21b5e25c4836, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 10000000
+  - Name: "\uBCA0\uC2A4\uC624\uBE10\uAD6C\uC774"
+    Food: {fileID: 21300000, guid: c06ef51bf431640488277a43dc665152, type: 3}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 070000000400000009000000
+  - Name: "\uB274\uD2B8\uB9AC\uC544 \uBC84\uAC70"
+    Food: {fileID: 0}
+    Cooks: {fileID: 0}
+    isHold: 0
+    moveScene: 0a000000020000000e000000
+  BackUpBone: []
+--- !u!114 &411203418036580546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411203418036580558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a347416ab1d1254abcfdfffd9c51f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &411203418036580547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411203418036580558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b1009239c26b343bdc57d49440254d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &411203418036580544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411203418036580558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca19276b9dcfd4a49a730a8ceaed6d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveScenes: 
+  points: 
+  idx: 0
+--- !u!114 &411203418036580545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411203418036580558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d97c6f6bd3b9046b65e964228680f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

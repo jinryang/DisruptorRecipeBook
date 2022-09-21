@@ -14,7 +14,7 @@ public class Popup : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 3)
+        if (timer >= 1)
         {
             timer = 0;
             this.gameObject.SetActive(false);
