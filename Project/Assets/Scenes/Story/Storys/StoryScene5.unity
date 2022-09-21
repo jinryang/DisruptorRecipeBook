@@ -339,7 +339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &316601565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 1218640111}
   - component: {fileID: 1218640110}
   - component: {fileID: 1218640109}
+  - component: {fileID: 1218640112}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -765,6 +766,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -27.000057}
   m_SizeDelta: {x: 1685, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1218640112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218640108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1424196456
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +792,7 @@ GameObject:
   - component: {fileID: 1424196459}
   - component: {fileID: 1424196458}
   - component: {fileID: 1424196457}
+  - component: {fileID: 1424196460}
   m_Layer: 5
   m_Name: name
   m_TagString: Untagged
@@ -845,6 +862,21 @@ RectTransform:
   m_AnchoredPosition: {x: -690, y: 109.99999}
   m_SizeDelta: {x: 440, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1424196460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424196456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1466201215
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +963,18 @@ MonoBehaviour:
       - m_Target: {fileID: 842777200}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 842777200}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1033,13 +1077,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cover: {fileID: 461072822}
   dialogue:
-    Names: []
+    Names:
+    - 
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "-\uCD08\uC778\uC885-"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "-\uC804\uD654\uBCA8-"
+    - "\uBBFC\uC2DD"
+    - "\uC5C4\uB9C8"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
     Sentences:
-    - "\uD788\uD788"
-    - asda
-    - asdafadggaf
-    - asbabjadjbabjkkbjajbkasfbjkasfjbkajbkasfkbjasfjbkasbjkbjkbjasfkbjsajbkkbjsfkbjafjbkasfbjkasjbkasfjbkasfsafasfasfssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-    - wqerq
+    - 
+    - "-\uC74C \uC774\uBC88\uC5D0\uB294 \uC0DD\uC120\uC744 \uC880 \uC368\uBCF4\uACE0\uC2F6\uC740\uB370"
+    - "-\uBC30\uC2A4\uB294 \uB108\uBB34 \uB9CE\uC774 \uBA39\uC5C8\uACE0 \uC800\uBC88\uC5D0
+      \uCC3E\uC740 \uD2F8\uB77C\uD53C\uC544\uB97C \uC368\uBCFC\uAE4C?\r"
+    - "\uBB34\uC2A8 \uC694\uB9AC\uB97C \uD574\uC57C\uD560\uC9C0...."
+    - "\"\uB775\uB3D9\""
+    - "...? \uBB50\uC9C0? \uD0DD\uBC30\uC654\uB098?\n\uC800\uBC88\uC5D0 \uC8FC\uBB38\uD55C\uAC70
+      \uC654\uB098?"
+    - "\uC5C4\uB9C8\uAC00 \uBCF4\uB0B4\uC8FC\uC168\uB124"
+    - "\"\uB69C\uB974\uB974\uB974\uB974\""
+    - "\uC5C4\uB9C8 \uBB58 \uB610 \uC774\uB807\uAC8C \uC2F8\uC8FC\uC168\uC5B4~"
+    - "\uBCC4\uAC74\uC544\uB2C8\uACE0 \uBC18\uCC2C\uB4E4 \uBA87\uAC1C \uC2F8\uC92C\uB2E4
+      \uACE0\uB4F1\uC5B4 \uC870\uB9BC \uAC19\uC740\uAC70"
+    - "\uACE0\uB4F1\uC5B4....\uC870\uB9BC?!\r"
+    - "\uC5C4\uB9C8 \uACE0\uB9C8\uC6CC!! \n\"\uB538\uAE4D\""
 --- !u!114 &1610233301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,14 +1461,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b3339b023f9964647afa621660a44825, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
