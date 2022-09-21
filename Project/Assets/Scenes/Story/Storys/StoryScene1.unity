@@ -663,8 +663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf834b1e985b9a4d981b383f2da52c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NameText: {fileID: 0}
-  DialogueText: {fileID: 0}
+  NameText: {fileID: 334710431}
+  DialogueText: {fileID: 613934599}
   animator: {fileID: 1718465510}
 --- !u!4 &842777201
 Transform:
