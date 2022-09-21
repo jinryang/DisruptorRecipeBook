@@ -11,8 +11,8 @@ public class SetRecipe : MonoBehaviour
     {
         this.transform.GetChild(2).GetComponent<Image>().sprite
             = RecipeDatas.Instance.Recipes[recipeNum].Food;
-        this.transform.GetChild(3).GetComponent<Image>().sprite
-            = RecipeDatas.Instance.Recipes[recipeNum].Cooks;
+        this.transform.GetChild(3).GetChild(0).GetComponent<Text>().text
+            = RecipeDatas.Instance.Recipes[recipeNum].Order.Replace("\\n","\n");
     }
 
     public void GameStart()

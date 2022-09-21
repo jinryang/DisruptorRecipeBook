@@ -33,13 +33,13 @@ public class SkillManagement : MonoBehaviour
     }
     #endregion
 
+    [System.Serializable]
     public class SkillInfo
     {
         public string Name;
         public string Information;
         public Sprite Image;
         public bool isHold = false;
-        public int index;
     }
 
     [SerializeField]
