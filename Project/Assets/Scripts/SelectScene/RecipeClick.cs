@@ -17,7 +17,7 @@ public class RecipeClick : MonoBehaviour
         else
         {
             GetComponent<Button>().enabled = false;
-            GetComponent<Image>().color = new Color(0.2f, 0.2f, 0.2f);
+            GetComponent<Image>().color = new Color(0f, 0f, 0f);
         }
     }
 

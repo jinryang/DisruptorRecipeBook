@@ -176,9 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uD2F8\uB77C\uD53C\uC544 \uC870\uB9BC"
+  info: "\uBBFC\uBB3C\uC0DD\uC120\uC778 \uD2F8\uB77C\uD53C\uC544\uB97C \uACE0\uB4F1\uC5B4\uC870\uB9BC\uACFC
+    \uAC19\uC740 \uB808\uC2DC\uD53C\uB85C \uC870\uB824\uB0B8 \uC694\uB9AC"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &4418268
@@ -826,9 +826,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uB274\uD2B8\uB9AC\uC544 \uBC84\uAC70"
+  info: "\uB274\uD2B8\uB9AC\uC544 \uACE0\uAE30\uB97C \uAC08\uC544 \uD328\uD2F0 \uD615\uD0DC\uB85C
+    \uB9CC\uB4E4\uC5B4 \uAD6C\uC6CC\uB0B4 \uB9CC\uB4E0 \uD584\uBC84\uAC70"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &113587958
@@ -1519,7 +1519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: "\uD669\uC18C\uAC1C\uAD6C\uB9AC \uB2E4\uB9AC \uD280\uAE40"
-  info: 
+  info: "\uD669\uC18C\uAC1C\uAD6C\uB9AC\uC758 \uD070 \uB2E4\uB9AC\uB97C \uAE30\uB984\uC73C\uB85C
+    \uD280\uACA8\uB0B8 \uC694\uB9AC"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &280888185
@@ -2721,9 +2722,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uBBF8\uAD6D\uAC00\uC7AC \uB9C8\uB77C\uB871\uC0E4"
+  info: "\uC0B6\uC740 \uBBF8\uAD6D\uAC00\uC7AC\uB97C \uB9E4\uCF64\uD55C \uB9C8\uB77C\uC18C\uC2A4\uB85C
+    \uBC84\uBB34\uB9B0 \uC694\uB9AC"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &476404918
@@ -2968,9 +2969,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uBCA0\uC2A4 \uC624\uBE10\uAD6C\uC774"
+  info: "\uC18C\uAE08\uC73C\uB85C \uB458\uB7EC\uC2FC \uBCA0\uC2A4\uB97C \uC624\uBE10\uC5D0
+    \uAD6C\uC6B4 \uC694\uB9AC"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &541409301
@@ -3120,9 +3121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uB274\uD2B8\uB9AC\uC544 \uACE0\uAE30\uC644\uC790"
+  info: "\uB274\uD2B8\uB9AC\uC544 \uACE0\uAE30\uB97C \uAC08\uC544 \uACE0\uAE30\uC644\uC790
+    \uD615\uD0DC\uB85C \uB9CC\uB4E4\uC5B4 \uAD6C\uC6CC\uB0B8 \uC694\uB9AC"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &548398753
@@ -7265,9 +7266,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uC0BC\uACB9\uC0B4 \uAC00\uC2DC \uC0C1\uCD94\uC308"
+  info: "\uAD6D\uBBFC \uC74C\uC2DD\uC778 \uC0BC\uACB9\uC0B4\uC744 \uAC00\uC2DC\uC0C1\uCD94\uC5D0
+    \uC2F8\uBA39\uB294 \uC694\uB9AC"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &1550211604
@@ -7752,9 +7753,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840b43866c7edd428b46e9ccb880b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uB290\uAE0B\uD55C \uB9C8\uC74C\uAC00\uC9D0"
-  info: "\uC2DC\uAC04\uC81C\uD55C\uC774 \uC788\uB294 \uBBF8\uB2C8\uAC8C\uC784\uC758
-    \uC81C\uD55C\uC2DC\uAC04\uC774 10\uCD08 \uC99D\uAC00\uD55C\uB2E4"
+  Name: "\uBBF8\uAD6D\uAC00\uC7AC \uB77C\uBA74"
+  info: "\uB77C\uBA74\uB9CC \uBA39\uAE30\uC5D0\uB294 \uB108\uBB34 \uBC0B\uBC0B\uD574
+    \uBBF8\uAD6D\uAC00\uC7AC\uB97C \uCD94\uAC00\uD55C \uB77C\uBA74"
   nametext: {fileID: 2139752024}
   infotext: {fileID: 1197500506}
 --- !u!114 &1658794915
