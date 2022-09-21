@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 
@@ -17,7 +18,9 @@ public class SoundSingleton : MonoBehaviour
     [SerializeField] AudioClip[] EF;
     [SerializeField] AudioSource[] audio;
     [SerializeField] AudioSource click;
+    private Slider soundSlider;
     public float fadeRange;
+    bool FIndTarget = false;
 
     private WaitForSeconds wait = new WaitForSeconds(0.01f);
 
@@ -54,18 +57,36 @@ public class SoundSingleton : MonoBehaviour
         {
             click.Play();
         }
-    }//bgm = audio[0]
-    //ef = audio[1]
+        if(GameObject.FindWithTag("SoundSlider") && FIndTarget == false)
+        {
+            soundSlider = GameObject.FindWithTag("SoundSlider").GetComponent<Slider>();
+            FIndTarget = true;
+        }
+        if(FIndTarget)
+        {
+            click.volume = soundSlider.value * 100;
+            for (int i = 0; i < audio.Length; ++i)
+            {
+                audio[i].volume = soundSlider.value * 100;
+            }
+        }
+
+    }
+
+    public void SetClickSounds(AudioClip clickSound)
+    {
+        click.clip = clickSound;
+    }
 
     public void StartBGM(int index)
     {
         audio[0].clip = BGM[index];
         audio[0].Play();
     }
-    public void StartEF(int index)
+    public void StartEF(int index, int numof)
     {
-        audio[1].clip = EF[index];
-        audio[1].Play();
+        audio[numof].clip = EF[index];
+        audio[numof].Play();
     }
 
     public void StopBGM()
@@ -73,9 +94,9 @@ public class SoundSingleton : MonoBehaviour
         audio[0].Stop();
     }
 
-    public void StopEF()
+    public void StopEF(int numof)
     {
-        audio[1].Stop();
+        audio[numof].Stop();
     }
 
     /*public void FadeInBGM()
