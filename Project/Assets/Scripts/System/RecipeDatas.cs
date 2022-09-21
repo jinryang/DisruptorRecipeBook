@@ -38,7 +38,7 @@ public class RecipeDatas : MonoBehaviour
     {
         public string Name;
         public Sprite Food;
-        public Sprite Cooks;
+        public string Order;
         public bool isHold = false;
         public int[] moveScene;
     }
