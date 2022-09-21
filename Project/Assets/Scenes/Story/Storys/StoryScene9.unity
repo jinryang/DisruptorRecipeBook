@@ -876,6 +876,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 842777200}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1466201218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,13 +981,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cover: {fileID: 461072822}
   dialogue:
-    Names: []
+    Names:
+    - 
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
+    - "\uBBFC\uC2DD"
     Sentences:
-    - "\uD788\uD788"
-    - asda
-    - asdafadggaf
-    - asbabjadjbabjkkbjajbkasfbjkasfjbkajbkasfkbjasfjbkasbjkbjkbjasfkbjsajbkkbjsfkbjafjbkasfbjkasjbkasfjbkasfsafasfasfssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-    - wqerq
+    - 
+    - "\uC9C0\uAE08\uAE4C\uC9C0\uC758 \uC694\uB9AC\uC911 \uB274\uD2B8\uB9AC\uC544\uAC00
+      \uD655\uC2E4\uD788 \uB9DB\uC774\uC88B\uACE0 \uC721\uC999\uC774 \uD48D\uBD80\uD558\uB124!"
+    - "\uC774\uAC78\uB85C \uD558\uB098 \uB354 \uB9CC\uB4E4\uC5B4 \uBCFC\uAE4C?"
+    - "\uC800\uBC88\uC5D0 \uACE0\uAE30\uC644\uC790 \uB9CC\uB4E4\uC5C8\uC744\uB54C
+      \uD0C4\uC218\uD654\uBB3C\uC744 \uC5BC\uB9C8\uB098 \uBA39\uACE0 \uC2F6\uC5C8\uB294\uC9C0.."
+    - "\uC88B\uC544!\n\uC5ED\uC2DC \uACE0\uAE30\uB294 \uD0C4\uC218\uD654\uBB3C\uACFC
+      \uC870\uD569\uC744 \uD574\uC57C\uC9C0!"
+    - "\uD584\uBC84\uAC70\uB85C \uAC04\uB2E4!!"
 --- !u!114 &1610233301
 MonoBehaviour:
   m_ObjectHideFlags: 0
