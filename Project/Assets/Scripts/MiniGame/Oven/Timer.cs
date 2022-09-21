@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
     public GameObject tembutton;
     public GameObject temb;
     public Image temg;
-    public TextMeshProUGUI TimeText;
+    public Text TimeText;
     public Text outTime;
 
     public int tempoint;
