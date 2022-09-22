@@ -64,10 +64,10 @@ public class SoundSingleton : MonoBehaviour
         }
         if(FIndTarget)
         {
-            click.volume = soundSlider.value * 100;
+            click.volume = soundSlider.value;
             for (int i = 0; i < audio.Length; ++i)
             {
-                audio[i].volume = soundSlider.value * 100;
+                audio[i].volume = soundSlider.value;
             }
         }
 
