@@ -15,7 +15,7 @@ public class CutTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 10;
+        time = 10 + SkillManagement.Instance.PlusTime() - SkillManagement.Instance.TimeAttackTime();
         cover.SetActive(false);
         cut = true;
         cuttimepoint = false;

@@ -13,7 +13,8 @@ public class FriManager : MonoBehaviour
     private bool xIsPerfect = false;
     private bool yIsPerfect = false;
     private bool IsClick = false;
-    int time;
+    public GameObject Timer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +37,7 @@ public class FriManager : MonoBehaviour
         }
         if (xIsPerfect == true && yIsPerfect == true)
         {
-            MinigameManagement.Instance.PlusScore(20);
+            MinigameManagement.Instance.PlusScore((int)(20*SkillManagement.Instance.PremiumOil()*SkillManagement.Instance.TimeAttackPoint()*SkillManagement.Instance.LastSpurt(Timer.GetComponent<CookTimer>().timer)));
             FlipNum--;
             xIsPerfect = false;
             yIsPerfect = false;

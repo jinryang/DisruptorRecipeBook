@@ -17,22 +17,22 @@ public class DegreeBoil : MonoBehaviour
         else if (degree < 6)
         {
             GetComponent<SpriteRenderer>().sprite = sp[1];
-            point = 30;
+            point = (int)(30 * SkillManagement.Instance.TimeAttackPoint());
         }
         else if (degree < 9)
         {
             GetComponent<SpriteRenderer>().sprite = sp[2];
-            point = 50;
+            point = (int)(50 * SkillManagement.Instance.TimeAttackPoint());
         }
         else if (degree < 12)
         {
             GetComponent<SpriteRenderer>().sprite = sp[3];
-            point = 70;
+            point = (int)(70f * SkillManagement.Instance.Perfectionist() * SkillManagement.Instance.TimeAttackPoint());
         }
         else
         {
-            GetComponent<SpriteRenderer>().sprite = sp[4];
-            point = 10;
+            GetComponent<SpriteRenderer>().color = new Color(0.5f,0.5f,0.5f,1);
+            point = (int)(10 * SkillManagement.Instance.TimeAttackPoint());
         }
 
         if (GetComponent<ObjectDragBoil>().onAble && !(GetComponent<ObjectDragBoil>().isMoving))

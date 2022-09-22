@@ -34,7 +34,7 @@ public class Cut : MonoBehaviour
             NowCut = 100;
             TimeStop.SetActive(false);
             cover.SetActive(true);
-            CutPoint = 100;
+            CutPoint = (int)(100 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.Perfectionist() * SkillManagement.Instance.LastSpurt(cuttimer.time));
             MinigameManagement.Instance.SetScore(CutPoint);
             Invoke("GoTuto", 2);
         }
@@ -42,25 +42,25 @@ public class Cut : MonoBehaviour
         {
             TimeStop.SetActive(false);
             cover.SetActive(true);
-            CutPoint = 70;
+            CutPoint = (int)(70 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.LastSpurt(cuttimer.time));
         }
         else if (NowCut >= 50 && cuttimer.cuttimepoint == true)
         {
             TimeStop.SetActive(false);
             cover.SetActive(true);
-            CutPoint = 50;
+            CutPoint = (int)(50 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.LastSpurt(cuttimer.time));
         }
         else if (NowCut >= 30 && cuttimer.cuttimepoint == true)
         {
             TimeStop.SetActive(false);
             cover.SetActive(true);
-            CutPoint = 30;
+            CutPoint = (int)(30 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.LastSpurt(cuttimer.time));
         }
         else if (NowCut < 30 && cuttimer.cuttimepoint == true)
         {
             TimeStop.SetActive(false);
             cover.SetActive(true);
-            CutPoint = 10;
+            CutPoint = (int)(10 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.LastSpurt(cuttimer.time));
         }
         CutText.text = "point : " + CutPoint;
         CutImage();

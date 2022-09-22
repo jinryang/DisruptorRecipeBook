@@ -12,6 +12,7 @@ public class CookTimer : MonoBehaviour
     {
         text = GetComponent<Text>();
         text.text = Mathf.Round(timer).ToString() + ":00";
+        timer += SkillManagement.Instance.PlusTime() - SkillManagement.Instance.TimeAttackTime();
     }
     private void FixedUpdate()
     {
@@ -20,7 +21,7 @@ public class CookTimer : MonoBehaviour
         else
         {
             text.text = "00:00";
-            MinigameManagement.Instance.GoTutorial();   
+            MinigameManagement.Instance.GoTutorial();
         }
     }
 }
