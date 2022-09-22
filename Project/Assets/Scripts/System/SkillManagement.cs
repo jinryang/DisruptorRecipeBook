@@ -45,7 +45,9 @@ public class SkillManagement : MonoBehaviour
     [SerializeField]
     public List<SkillInfo> Skills;
     public List<SkillInfo> BackUpBone;
+    [SerializeField]
     private int[] usingIdx;
+    private int uidx;
 
     public void GetSkill(int _idx)
     {
@@ -58,9 +60,14 @@ public class SkillManagement : MonoBehaviour
         Skills = Data.Instance.LoadData().skills;
     }
 
-    public void SetUsingSkill(int[] _idx)
+    public void ResetUsingSkill()
     {
-        usingIdx = _idx;
+        usingIdx[0] = usingIdx[1] = usingIdx[2] = -1;
+        uidx = 0;
+    }
+    public void SetUsingSkill(int _idx)
+    {
+        usingIdx[uidx++] = _idx;
     }
 
     public float PlusTime()
