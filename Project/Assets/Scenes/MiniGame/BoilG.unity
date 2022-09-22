@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0174f1c8f839d4a8af21c50ef20529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject: {fileID: 816671449930870246, guid: 38c3242396a1dc2408a0d0505e599511, type: 3}
+  spawnObject: {fileID: 816671449930870246, guid: 6fed5941a7a8a4b45bf5da086cc75a84, type: 3}
   positions:
   - {fileID: 1141726220}
   - {fileID: 327506927}
