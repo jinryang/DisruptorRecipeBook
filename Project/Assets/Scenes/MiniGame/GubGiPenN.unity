@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0174f1c8f839d4a8af21c50ef20529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject: {fileID: 816671449930870246, guid: c69e0574b2124544b8215e1db7c77207, type: 3}
+  spawnObject: {fileID: 816671449930870246, guid: 66e5f4fcd5b3b1d43a4a73516fc0f3be, type: 3}
   positions:
   - {fileID: 1654711298}
   - {fileID: 444416631}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 540824659340375891}
   - component: {fileID: 816671449930870267}
   m_Layer: 0
-  m_Name: OilFriGogi
+  m_Name: OilFriFro
   m_TagString: MoveObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6603774, g: 0.27917266, b: 0.16509435, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d87e6fb9b122e974db813161730e039e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,14 +105,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.3333333, y: 3.3333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &816671449930870266
 MonoBehaviour:
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4ceaab432ae445b9ffe0ef142af00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMove: 0
+  isMoving: 0
   onAble: 0
   ID: 0
 --- !u!114 &540824659340375891
@@ -141,6 +141,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08213e158a8f89f4bb1e9015af97cb63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sp:
+  - {fileID: 21300000, guid: d87e6fb9b122e974db813161730e039e, type: 3}
+  - {fileID: 21300000, guid: 41fd1e17f903c63408b91259626674f6, type: 3}
+  - {fileID: 21300000, guid: 5979eb1f31a826540815b2d57cea7f35, type: 3}
+  - {fileID: 21300000, guid: 83e41f28926f1ea47985e7a1dcd98ca5, type: 3}
+  - {fileID: 21300000, guid: fc590955179401f45b4f32aeadbcf147, type: 3}
 --- !u!50 &816671449930870267
 Rigidbody2D:
   serializedVersion: 4

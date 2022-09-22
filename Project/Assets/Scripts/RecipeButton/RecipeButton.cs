@@ -26,12 +26,14 @@ public class RecipeButton : MonoBehaviour
                 skills[2].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = icons[int.Parse(transform.parent.gameObject.name)];
                 skills[2].transform.GetChild(1).gameObject.SetActive(true);
                 SkillManagement.Instance.SetUsingSkill(int.Parse(transform.parent.gameObject.name));
+                skills[2].SetActive(false);
             }
             else
             {
                 skills[1].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = icons[int.Parse(transform.parent.gameObject.name)];
                 skills[1].transform.GetChild(1).gameObject.SetActive(true);
                 SkillManagement.Instance.SetUsingSkill(int.Parse(transform.parent.gameObject.name));
+                skills[1].SetActive(false);
             }
         }
         else
@@ -39,6 +41,7 @@ public class RecipeButton : MonoBehaviour
             skills[0].transform.GetChild(1).gameObject.GetComponent<Image>().sprite = icons[int.Parse(transform.parent.gameObject.name)];
             skills[0].transform.GetChild(1).gameObject.SetActive(true);
             SkillManagement.Instance.SetUsingSkill(int.Parse(transform.parent.gameObject.name));
+            skills[0].SetActive(false);
         }
         Destroy(transform.parent.gameObject);
     }
