@@ -6,8 +6,14 @@ public class DegreeBoil : MonoBehaviour
 {
     private float degree = 0;
     public Sprite[] sp;
-
     int point;
+    GameObject Timer;
+    float time;
+    private void Start()
+    {
+        Timer = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
+        time = Timer.GetComponent<CookTimer>().timer;
+    }
     void FixedUpdate()
     {
         if (degree < 3)
@@ -18,22 +24,22 @@ public class DegreeBoil : MonoBehaviour
         else if (degree < 6)
         {
             GetComponent<SpriteRenderer>().sprite = sp[1];
-            point = (int)(30 * SkillManagement.Instance.TimeAttackPoint());
+            point = (int)(30 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.LastSpurt(time) * SkillManagement.Instance.TimeAttackPoint());
         }
         else if (degree < 9)
         {
             GetComponent<SpriteRenderer>().sprite = sp[2];
-            point = (int)(50 * SkillManagement.Instance.TimeAttackPoint());
+            point = (int)(50 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.LastSpurt(time) * SkillManagement.Instance.TimeAttackPoint());
         }
         else if (degree < 12)
         {
             GetComponent<SpriteRenderer>().sprite = sp[3];
-            point = (int)(70f * SkillManagement.Instance.Perfectionist() * SkillManagement.Instance.TimeAttackPoint());
+            point = (int)(70f * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.LastSpurt(time) * SkillManagement.Instance.Perfectionist() * SkillManagement.Instance.TimeAttackPoint());
         }
         else
         {
-            GetComponent<SpriteRenderer>().color = new Color(0.5f,0.5f,0.5f,1);
-            point = (int)(10 * SkillManagement.Instance.TimeAttackPoint());
+            GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 1);
+            point = (int)(10 * SkillManagement.Instance.CookingGodBlessing(10, 50) * SkillManagement.Instance.NotEpicurean() * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.LastSpurt(time) * SkillManagement.Instance.TimeAttackPoint());
         }
 
         if (GetComponent<ObjectDragBoil>().onAble && !(GetComponent<ObjectDragBoil>().isMoving))

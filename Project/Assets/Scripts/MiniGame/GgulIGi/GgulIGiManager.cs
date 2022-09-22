@@ -7,10 +7,13 @@ public class GgulIGiManager : MonoBehaviour
     [SerializeField] GameObject Bubble;
     public float BubbleSummonTime = 0.3f;
     private float tempTime;
+    GameObject Timer;
+    float time;
 
-
-    void Start()
+    private void Start()
     {
+        Timer = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
+        time = Timer.GetComponent<CookTimer>().timer;
         tempTime = BubbleSummonTime;
     }
 
@@ -30,6 +33,6 @@ public class GgulIGiManager : MonoBehaviour
     }
     public void addScore()
     {
-        MinigameManagement.Instance.PlusScore(20);
+        MinigameManagement.Instance.PlusScore((int)(20 *SkillManagement.Instance.CookingMaster()* SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.LastSpurt(time)));
     }
 }

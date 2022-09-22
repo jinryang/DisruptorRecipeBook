@@ -41,8 +41,8 @@ public class Timer : MonoBehaviour
             {
                 time = 0;
                 tembutton.SetActive(false);
-                
-                if(!a)
+
+                if (!a)
                 {
                     AddTemPoint();
                     po.AddPoint(tempoint);
@@ -83,7 +83,7 @@ public class Timer : MonoBehaviour
     {
         time = 20.02f;
         temb.SetActive(false);
-        
+
     }
     public void AddTemPoint()
     {
@@ -99,6 +99,7 @@ public class Timer : MonoBehaviour
             tempoint = 10;
         else if (tem.nowtem <= 100)
             tempoint = 10;
+        tempoint = (int)(tempoint * SkillManagement.Instance.CookingMaster());
     }
     public void AddTimePoint()
     {
@@ -109,6 +110,7 @@ public class Timer : MonoBehaviour
         else if (time >= 6 && time <= 15 && stop)
             timepoint = 30;
         else if (time >= 3 && stop)
-            timepoint = 10;
+            timepoint = (int)(10 * SkillManagement.Instance.CookingGodBlessing(10, 30));
+        timepoint = (int)(timepoint * SkillManagement.Instance.CookingMaster());
     }
 }
