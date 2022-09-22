@@ -15,6 +15,9 @@ public class Cut : MonoBehaviour
     public GameObject cover;
     public Text CutText;
     public int CutPoint = 0;
+
+    public Image Meet;
+    public Sprite[] MeetImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +29,14 @@ public class Cut : MonoBehaviour
     void FixedUpdate()
     {
         CutSlider.value = NowCut;
-        if(NowCut >= 100)
+        if (NowCut >= 100)
         {
             NowCut = 100;
             TimeStop.SetActive(false);
             cover.SetActive(true);
             CutPoint = 100;
+            MinigameManagement.Instance.SetScore(CutPoint);
+            Invoke("GoTuto", 2);
         }
         else if (NowCut >= 70 && cuttimer.cuttimepoint == true)
         {
@@ -58,9 +63,57 @@ public class Cut : MonoBehaviour
             CutPoint = 10;
         }
         CutText.text = "point : " + CutPoint;
+        CutImage();
     }
     public void CutButton()
     {
         NowCut += CutSpeed;
+    }
+    public void CutImage()
+    {
+        if (NowCut >= 100)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, -10);
+        }
+        else if (NowCut >= 90)
+        {
+            Meet.sprite = MeetImage[2];
+        }
+        else if (NowCut >= 80)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, 4);
+        }
+        else if (NowCut >= 70)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, -3);
+        }
+        else if (NowCut >= 60)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, 5);
+        }
+        else if (NowCut >= 50)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, -6);
+        }
+        else if (NowCut >= 40)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, 2);
+        }
+        else if (NowCut >= 30)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, -1);
+        }
+        else if (NowCut >= 20)
+        {
+            Meet.sprite = MeetImage[1];
+        }
+        else if (NowCut >= 10)
+        {
+            Meet.transform.localRotation = Quaternion.Euler(0, 0, -1);
+        }
+    }
+    private void GoTuto()
+    {
+        MinigameManagement.Instance.GoTutorial();
     }
 }
