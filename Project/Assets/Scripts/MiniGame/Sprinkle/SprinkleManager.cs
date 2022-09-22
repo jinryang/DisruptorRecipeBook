@@ -52,9 +52,9 @@ public class SprinkleManager : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             if (sprinklePos[i].IsEnded)
-                score += 100;
+                score += (int)(100 * SkillManagement.Instance.CookingMaster() * SkillManagement.Instance.TimeAttackPoint() * SkillManagement.Instance.LastSpurt(Timer.GetComponent<CookTimer>().timer));
             else
-                score -= 50;
+                score -= (int)(50 * SkillManagement.Instance.CookingGodBlessing(50, -50));
         }
         MinigameManagement.Instance.SetScore(score);
         MinigameManagement.Instance.GoTutorial();

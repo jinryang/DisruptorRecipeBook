@@ -6,16 +6,7 @@ public class RecipeButton : MonoBehaviour
 {
     public GameObject ItemList;
     public GameObject InObject;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void ItemListClick()
     {
         ItemList.SetActive(true);
@@ -24,6 +15,7 @@ public class RecipeButton : MonoBehaviour
     {
         InObject.SetActive(false);
         ItemList.SetActive(false);
+        Destroy(transform.parent.gameObject);
     }
     public void OutButton()
     {

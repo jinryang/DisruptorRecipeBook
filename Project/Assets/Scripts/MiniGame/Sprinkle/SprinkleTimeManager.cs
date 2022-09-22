@@ -9,6 +9,11 @@ public class SprinkleTimeManager : MonoBehaviour
     public bool IsChcking = false; //Express Player is clicking
     [SerializeField] SprinkleManager sprinkleManager;
 
+    private void Start()
+    {
+        time -= SkillManagement.Instance.HandMaster();
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.CompareTag("Mouse"))
