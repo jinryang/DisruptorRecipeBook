@@ -7,8 +7,6 @@ public class UpDropPoint : MonoBehaviour
 {
     public DropPoint dropPoint;
     public int UPDP = 0;
-
-    // Start is called before the first frame update
     void Start()
     {
         dropPoint = FindObjectOfType<DropPoint>();
