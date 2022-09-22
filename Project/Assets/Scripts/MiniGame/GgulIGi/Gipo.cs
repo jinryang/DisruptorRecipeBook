@@ -13,7 +13,7 @@ public class Gipo : MonoBehaviour
     }
     private void Awake()
     {
-        ggulIGiManager = GameObject.Find("BaDak").GetComponent<GgulIGiManager>();
+        ggulIGiManager = GameObject.Find("HotWater").GetComponent<GgulIGiManager>();
     }
 
     void Update()

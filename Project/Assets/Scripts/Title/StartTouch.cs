@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class StartTouch : MonoBehaviour
 {
-    public TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,11 +12,8 @@ public class StartTouch : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void fsb()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("MainScene");
-        }
+        SceneManager.LoadScene(this.gameObject.name);
     }
 }

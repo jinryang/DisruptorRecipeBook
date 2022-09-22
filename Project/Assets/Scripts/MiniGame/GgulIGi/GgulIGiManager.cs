@@ -25,9 +25,8 @@ public class GgulIGiManager : MonoBehaviour
         {
             BubbleSummonTime = tempTime;
 
-            float x = Random.Range(-3.75f, 3.75f);
-            float y = Random.Range(-3.75f, 3.75f);
-            WaitForSeconds wait = new WaitForSeconds(0.3f);
+            float x = Random.Range(-3.5f, 3.5f);
+            float y = Random.Range(-3.5f, 3.5f);
             Instantiate(Bubble, new Vector3(x, y, 1), Quaternion.identity);
         }
     }
