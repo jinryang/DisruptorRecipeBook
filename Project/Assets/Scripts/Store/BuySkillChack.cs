@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuyChack : MonoBehaviour
+public class BuySkillChack : MonoBehaviour
 {
     [SerializeField] private GameObject[] items;
-    
+
     private void Awake()
     {
-        for (int i = 1; i < 9; i++)
+        for (int i = 0; i < 13; i++)
         {
-            if (RecipeDatas.Instance.Recipes[i].isHold)
+            if (SkillManagement.Instance.Skills[i].isHold)
             {
-                Destroy(items[i - 1]);
+                Destroy(items[i]);
             }
         }
     }
