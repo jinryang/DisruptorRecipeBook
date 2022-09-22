@@ -7638,7 +7638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0
-  m_Text: STORE
+  m_Text: "\uC0C1\uC810"
 --- !u!222 &855794211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10950,7 +10950,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Skill
+  m_Text: "\uC2A4\uD0AC"
 --- !u!222 &1361624755
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12821,7 +12821,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: recipe
+  m_Text: "\uB808\uC2DC\uD53C"
 --- !u!222 &1638757466
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13053,7 +13053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK
+  m_Text: "\uB4A4\uB85C\uAC00\uAE30"
 --- !u!222 &1662210152
 CanvasRenderer:
   m_ObjectHideFlags: 0
