@@ -26,6 +26,7 @@ public class DropButton : MonoBehaviour
     public void Drop()
     {
         Layer++;
+        burger.GetComponent<SpriteRenderer>().sortingOrder = -10 + Layer;
         StopDrop += 1;
         if(StopDrop <= maxDrop)
             move.stop = 1;
@@ -35,7 +36,7 @@ public class DropButton : MonoBehaviour
         }
         burger.sprite = images[StopDrop - 1];
         burger2.sprite = images[StopDrop];
-        burger.GetComponent<SpriteRenderer>().sortingOrder = -10 + Layer;
+        
     }
     
     public void MoveScene()
