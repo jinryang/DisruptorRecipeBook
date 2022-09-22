@@ -28,12 +28,12 @@ public class SoundSingleton : MonoBehaviour
     private static SoundSingleton instance = null;
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else if(instance != this)
+        else if (instance != this)
         {
             Destroy(this.gameObject);
         }
@@ -53,16 +53,16 @@ public class SoundSingleton : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             click.Play();
         }
-        if(GameObject.FindWithTag("SoundSlider") && FIndTarget == false)
+        if (GameObject.FindWithTag("SoundSlider") && FIndTarget == false)
         {
             soundSlider = GameObject.FindWithTag("SoundSlider").GetComponent<Slider>();
             FIndTarget = true;
         }
-        if(FIndTarget)
+        if (FIndTarget)
         {
             click.volume = soundSlider.value;
             for (int i = 0; i < audio.Length; ++i)
@@ -80,8 +80,11 @@ public class SoundSingleton : MonoBehaviour
 
     public void StartBGM(int index)
     {
-        audio[0].clip = BGM[index];
-        audio[0].Play();
+        if (audio[0].clip != BGM[index])
+        {
+            audio[0].clip = BGM[index];
+            audio[0].Play();
+        }
     }
     public void StartEF(int index, int numof)
     {
