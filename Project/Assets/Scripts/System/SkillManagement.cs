@@ -94,5 +94,86 @@ public class SkillManagement : MonoBehaviour
             if (Skills[i].isHold)
                 return 1.25f;
         return 1;
+    }//
+    public float TimeAttackTime()
+    {
+        int i = 4;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 10f;
+        return 0;
+    }
+    public float TimeAttackPoint()
+    {
+        int i = 4;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.5f;
+        return 1;
+    }
+    public float LastSpurt(float timer)
+    {
+        int i = 5;
+        if (timer < 10)
+            if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+                if (Skills[i].isHold)
+                    return 1.5f;
+        return 1;
+    }
+    public float ExcellentBalance()
+    {
+        int i = 6;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1;
+        return 0;
+    }
+    public float FriShoes()
+    {
+        int i = 7;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.5f;
+        return 1;
+    }
+    public float PremiumOil()
+    {
+        int i = 8;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.25f;
+        return 1;
+    }
+    public float HandMaster()
+    {
+        int i = 9;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1;
+        return 0;
+    }
+    public float CookingMaster()
+    {
+        int i = 10;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.25f;
+        return 1;
+    }
+    public float NotEpicurean()
+    {
+        int i = 11;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.5f;
+        return 1;
+    }
+    public int CookingGodBlessing(int less, int normal)
+    {
+        int i = 12;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return normal;
+        return less;
     }
 }
