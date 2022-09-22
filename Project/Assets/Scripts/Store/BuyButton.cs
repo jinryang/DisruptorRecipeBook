@@ -36,6 +36,21 @@ public class BuyButton : MonoBehaviour
             Invoke("YouDoNotHavePoint", 2.0f);
         }
     }
+    public void BuySkill()
+    {
+        if (ppoint.NowPoint >= BuyPoint)
+        {
+            ppoint.NowPoint -= BuyPoint;
+            PlayerDataManagement.Instance.MinusPoint(BuyPoint);
+            SkillManagement.Instance.GetSkill(int.Parse(transform.parent.name));
+            Destroy(gameObject);
+        }
+        else
+        {
+            nopoint.SetActive(true);
+            Invoke("YouDoNotHavePoint", 2.0f);
+        }
+    }
     void YouDoNotHavePoint()
     {
         nopoint.SetActive(false);
