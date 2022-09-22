@@ -63,12 +63,36 @@ public class SkillManagement : MonoBehaviour
         usingIdx = _idx;
     }
 
-    public float Plus10Time()
+    public float PlusTime()
     {
         int i = 0;
         if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
             if (Skills[i].isHold)
                 return 10;
         return 0;
+    }
+    public float Perfectionist()
+    {
+        int i = 1;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.5f;
+        return 1;
+    }
+    public float ManyWings()
+    {
+        int i = 2;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 10f;
+        return 0;
+    }
+    public float SharpEdge()
+    {
+        int i = 3;
+        if (usingIdx[0] == i || usingIdx[1] == i || usingIdx[2] == i)
+            if (Skills[i].isHold)
+                return 1.25f;
+        return 1;
     }
 }
