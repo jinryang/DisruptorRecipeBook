@@ -56,6 +56,7 @@ public class SprinkleManager : MonoBehaviour
             else
                 score -= (int)(50 * SkillManagement.Instance.CookingGodBlessing(50, -50));
         }
+        if (score < 0) score = 0;
         MinigameManagement.Instance.SetScore(score);
         MinigameManagement.Instance.GoTutorial();
     }
